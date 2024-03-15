@@ -14,6 +14,8 @@ Method | HTTP request | Description
 
 
 
+The Permify Watch API acts as a real-time broadcaster that shows changes in the relation tuples.
+
 ### Example
 
 ```javascript

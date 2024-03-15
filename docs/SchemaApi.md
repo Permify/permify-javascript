@@ -16,6 +16,8 @@ Method | HTTP request | Description
 
 list all authorization models
 
+Models written to Permify using the write schema API can be listed using this API with the timestamps at which the models were created.
+
 ### Example
 
 ```javascript
@@ -61,6 +63,8 @@ No authorization required
 
 read your authorization model
 
+When a model is written to Permify using the write schema API a schema version will be returned by the API. That schema version can be used to inspect the schema.
+
 ### Example
 
 ```javascript
@@ -105,6 +109,8 @@ No authorization required
 > SchemaWriteResponse schemasWrite(tenantId, body)
 
 write your authorization model
+
+Permify provide it&#39;s own authorization language to model common patterns of easily. We called the authorization model Permify Schema and it can be created on our playground as well as in any IDE or text editor.
 
 ### Example
 

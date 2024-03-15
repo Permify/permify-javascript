@@ -58,6 +58,7 @@ export default class DataApi {
 
     /**
      * run bundle
+     * The \"Run Bundle\" API provides a straightforward way to execute predefined bundles within your application's tenant environment. By sending a POST request to this endpoint, you can activate specific functionalities or processes encapsulated in a bundle.
      * @param {String} tenantId 
      * @param {module:model/BundleRunRequest} body 
      * @param {module:permify/DataApi~bundleRunCallback} callback The callback function, accepting three arguments: error, data, response
@@ -105,6 +106,7 @@ export default class DataApi {
 
     /**
      * read attribute(s)
+     * Read API allows for directly querying the stored graph data to display and filter stored attributes.
      * @param {String} tenantId tenant_id represents the unique identifier of the tenant from which the attributes are being read.
      * @param {module:model/DataAttributesReadRequest} body 
      * @param {module:permify/DataApi~dataAttributesReadCallback} callback The callback function, accepting three arguments: error, data, response
@@ -152,6 +154,7 @@ export default class DataApi {
 
     /**
      * delete data
+     * You can delete any stored relation tuples or attributes with following API.
      * @param {String} tenantId tenant_id represents the unique identifier of the tenant from which the data will be deleted.
      * @param {module:model/DataDeleteRequest} body 
      * @param {module:permify/DataApi~dataDeleteCallback} callback The callback function, accepting three arguments: error, data, response
@@ -199,6 +202,7 @@ export default class DataApi {
 
     /**
      * read relation tuple(s)
+     * Read API allows for directly querying the stored graph data to display and filter stored relational tuples.
      * @param {String} tenantId tenant_id represents the unique identifier of the tenant for which relationships are read.
      * @param {module:model/DataRelationshipsReadRequest} body 
      * @param {module:permify/DataApi~dataRelationshipsReadCallback} callback The callback function, accepting three arguments: error, data, response
@@ -246,6 +250,7 @@ export default class DataApi {
 
     /**
      * create data
+     * In Permify, attributes and relations between your entities, objects and users represents your authorization data. These data stored as tuples in a preferred database.
      * @param {String} tenantId tenant_id represents the unique identifier of the tenant for which data is written.
      * @param {module:model/DataWriteRequest} body 
      * @param {module:permify/DataApi~dataWriteCallback} callback The callback function, accepting three arguments: error, data, response

@@ -19,6 +19,8 @@ Method | HTTP request | Description
 
 This method returns a decision about whether user can perform an permission on a certain resource.
 
+In Permify, you can perform two different types access checks,   resource based authorization checks, in form of Can user U perform action Y in resource Z? subject based authorization checks,   in form of Which resources can user U edit? In this section we&#39;ll look at the resource based check request of Permify. You can find subject based access checks in Entity (Data) Filtering section.
+
 ### Example
 
 ```javascript
@@ -63,6 +65,8 @@ No authorization required
 > PermissionExpandResponse permissionsExpand(tenantId, body)
 
 expand relationships according to schema
+
+Retrieve all subjects (users and user sets) that have a relationship or attribute with given entity and permission. Expand API response is represented by a user set tree, whose leaf nodes are user IDs or user sets pointing to other ⟨object#relation⟩ pairs.  &lt;Tip&gt;WHEN TO USE ? Expand is designed for reasoning the complete set of users that have access to their objects, which allows our users to build efficient search indices for access-controlled content.  It is not designed to use as a check access. Expand request has a high latency which can cause a performance issues when its used as access check.&lt;/Tip&gt;
 
 ### Example
 
@@ -109,6 +113,8 @@ No authorization required
 
 Retrieve an entity by its identifier.
 
+Lookup Entity endpoint lets you ask questions in form of “Which resources can user:X do action Y?”. As a response of this you’ll get a entity results in a format of string array.
+
 ### Example
 
 ```javascript
@@ -153,6 +159,8 @@ No authorization required
 > StreamResultOfPermissionLookupEntityStreamResponse permissionsLookupEntityStream(tenantId, body)
 
 Stream entities by their identifiers.
+
+Lookup Entity endpoint lets you ask questions in form of “Which resources can user:X do action Y?”. As a response of this you’ll get a entity results in a format of as a streaming response.
 
 ### Example
 
@@ -199,6 +207,8 @@ No authorization required
 
 Retrieve a subject by its identifier.
 
+Lookup Subject endpoint lets you ask questions in form of “Which subjects can do action Y on entity:X?”. As a response of this you’ll get a subject results in a format of string array.
+
 ### Example
 
 ```javascript
@@ -243,6 +253,8 @@ No authorization required
 > PermissionSubjectPermissionResponse permissionsSubjectPermission(tenantId, body)
 
 Retrieve permissions related to a specific subject.
+
+The Subject Permission List endpoint allows you to inquire in the form of “Which permissions user:x can perform on entity:y?”. In response, you&#39;ll receive a list of permissions specific to the user for the given entity, returned in the format of a map.    In this endpoint, you&#39;ll receive a map of permissions and their statuses directly. The structure is map[string]CheckResult, such as \&quot;sample-permission\&quot; -&gt; \&quot;ALLOWED\&quot;. This represents the permissions and their associated states in a key-value pair format.
 
 ### Example
 

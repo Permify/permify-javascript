@@ -50,6 +50,7 @@ export default class SchemaApi {
 
     /**
      * list all authorization models
+     * Models written to Permify using the write schema API can be listed using this API with the timestamps at which the models were created.
      * @param {String} tenantId tenant_id is a string that identifies the tenant. It must match the pattern \"[a-zA-Z0-9-,]+\", be a maximum of 64 bytes, and must not be empty.
      * @param {module:model/SchemasListRequest} body 
      * @param {module:permify/SchemaApi~schemasListCallback} callback The callback function, accepting three arguments: error, data, response
@@ -97,6 +98,7 @@ export default class SchemaApi {
 
     /**
      * read your authorization model
+     * When a model is written to Permify using the write schema API a schema version will be returned by the API. That schema version can be used to inspect the schema.
      * @param {String} tenantId tenant_id is a string that identifies the tenant. It must match the pattern \"[a-zA-Z0-9-,]+\", be a maximum of 64 bytes, and must not be empty.
      * @param {module:model/SchemasReadRequest} body 
      * @param {module:permify/SchemaApi~schemasReadCallback} callback The callback function, accepting three arguments: error, data, response
@@ -144,6 +146,7 @@ export default class SchemaApi {
 
     /**
      * write your authorization model
+     * Permify provide it's own authorization language to model common patterns of easily. We called the authorization model Permify Schema and it can be created on our playground as well as in any IDE or text editor.
      * @param {String} tenantId tenant_id is a string that identifies the tenant. It must match the pattern \"[a-zA-Z0-9-,]+\", be a maximum of 64 bytes, and must not be empty.
      * @param {module:model/SchemasWriteRequest} body 
      * @param {module:permify/SchemaApi~schemasWriteCallback} callback The callback function, accepting three arguments: error, data, response

@@ -16,6 +16,8 @@ Method | HTTP request | Description
 
 create new tenant
 
+Permify Multi Tenancy support you can create custom schemas for tenants and manage them in a single place. You can create a tenant with following API.  &lt;Warning&gt;We have a pre-inserted tenant - t1 - by default for the ones that don&#39;t use multi-tenancy.&lt;/Warning&gt;
+
 ### Example
 
 ```javascript
@@ -59,6 +61,8 @@ No authorization required
 
 delete tenant
 
+You can delete a tenant with following API.
+
 ### Example
 
 ```javascript
@@ -101,6 +105,8 @@ No authorization required
 > TenantListResponse tenantsList(body)
 
 list tenants
+
+You can list tenants with following API.
 
 ### Example
 

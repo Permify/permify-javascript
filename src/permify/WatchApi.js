@@ -45,6 +45,7 @@ export default class WatchApi {
      */
 
     /**
+     * The Permify Watch API acts as a real-time broadcaster that shows changes in the relation tuples.
      * @param {String} tenantId Identifier of the tenant, required, and must match the pattern \"[a-zA-Z0-9-,]+\", max 64 bytes.
      * @param {module:model/WatchWatchRequest} body 
      * @param {module:permify/WatchApi~watchWatchCallback} callback The callback function, accepting three arguments: error, data, response
