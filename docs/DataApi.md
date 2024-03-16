@@ -5,12 +5,12 @@ All URIs are relative to *http://localhost*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**bundleRun**](DataApi.md#bundleRun) | **POST** /v1/tenants/{tenant_id}/data/run-bundle | run bundle
-[**dataAttributesRead**](DataApi.md#dataAttributesRead) | **POST** /v1/tenants/{tenant_id}/data/attributes/read | read attribute(s)
+[**dataAttributesRead**](DataApi.md#dataAttributesRead) | **POST** /v1/tenants/{tenant_id}/data/attributes/read | read attributes
 [**dataDelete**](DataApi.md#dataDelete) | **POST** /v1/tenants/{tenant_id}/data/delete | delete data
-[**dataRelationshipsRead**](DataApi.md#dataRelationshipsRead) | **POST** /v1/tenants/{tenant_id}/data/relationships/read | read relation tuple(s)
-[**dataWrite**](DataApi.md#dataWrite) | **POST** /v1/tenants/{tenant_id}/data/write | create data
+[**dataRelationshipsRead**](DataApi.md#dataRelationshipsRead) | **POST** /v1/tenants/{tenant_id}/data/relationships/read | read relationships
+[**dataWrite**](DataApi.md#dataWrite) | **POST** /v1/tenants/{tenant_id}/data/write | write data
 [**relationshipsDelete**](DataApi.md#relationshipsDelete) | **POST** /v1/tenants/{tenant_id}/relationships/delete | delete relationships
-[**relationshipsWrite**](DataApi.md#relationshipsWrite) | **POST** /v1/tenants/{tenant_id}/relationships/write | create new relationships
+[**relationshipsWrite**](DataApi.md#relationshipsWrite) | **POST** /v1/tenants/{tenant_id}/relationships/write | write relationships
 
 
 
@@ -19,8 +19,6 @@ Method | HTTP request | Description
 > BundleRunResponse bundleRun(tenantId, body)
 
 run bundle
-
-The \&quot;Run Bundle\&quot; API provides a straightforward way to execute predefined bundles within your application&#39;s tenant environment. By sending a POST request to this endpoint, you can activate specific functionalities or processes encapsulated in a bundle.
 
 ### Example
 
@@ -65,9 +63,7 @@ No authorization required
 
 > AttributeReadResponse dataAttributesRead(tenantId, body)
 
-read attribute(s)
-
-Read API allows for directly querying the stored graph data to display and filter stored attributes.
+read attributes
 
 ### Example
 
@@ -114,8 +110,6 @@ No authorization required
 
 delete data
 
-You can delete any stored relation tuples or attributes with following API.
-
 ### Example
 
 ```javascript
@@ -159,9 +153,7 @@ No authorization required
 
 > RelationshipReadResponse dataRelationshipsRead(tenantId, body)
 
-read relation tuple(s)
-
-Read API allows for directly querying the stored graph data to display and filter stored relational tuples.
+read relationships
 
 ### Example
 
@@ -206,9 +198,7 @@ No authorization required
 
 > DataWriteResponse dataWrite(tenantId, body)
 
-create data
-
-In Permify, attributes and relations between your entities, objects and users represents your authorization data. These data stored as tuples in a preferred database.
+write data
 
 ### Example
 
@@ -298,7 +288,7 @@ No authorization required
 
 > RelationshipWriteResponse relationshipsWrite(tenantId, body)
 
-create new relationships
+write relationships
 
 ### Example
 

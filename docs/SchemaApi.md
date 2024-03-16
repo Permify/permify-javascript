@@ -4,9 +4,9 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**schemasList**](SchemaApi.md#schemasList) | **POST** /v1/tenants/{tenant_id}/schemas/list | list all authorization models
-[**schemasRead**](SchemaApi.md#schemasRead) | **POST** /v1/tenants/{tenant_id}/schemas/read | read your authorization model
-[**schemasWrite**](SchemaApi.md#schemasWrite) | **POST** /v1/tenants/{tenant_id}/schemas/write | write your authorization model
+[**schemasList**](SchemaApi.md#schemasList) | **POST** /v1/tenants/{tenant_id}/schemas/list | list schema
+[**schemasRead**](SchemaApi.md#schemasRead) | **POST** /v1/tenants/{tenant_id}/schemas/read | read schema
+[**schemasWrite**](SchemaApi.md#schemasWrite) | **POST** /v1/tenants/{tenant_id}/schemas/write | write schema
 
 
 
@@ -14,9 +14,7 @@ Method | HTTP request | Description
 
 > SchemaListResponse schemasList(tenantId, body)
 
-list all authorization models
-
-Models written to Permify using the write schema API can be listed using this API with the timestamps at which the models were created.
+list schema
 
 ### Example
 
@@ -61,9 +59,7 @@ No authorization required
 
 > SchemaReadResponse schemasRead(tenantId, body)
 
-read your authorization model
-
-When a model is written to Permify using the write schema API a schema version will be returned by the API. That schema version can be used to inspect the schema.
+read schema
 
 ### Example
 
@@ -108,9 +104,7 @@ No authorization required
 
 > SchemaWriteResponse schemasWrite(tenantId, body)
 
-write your authorization model
-
-Permify provide it&#39;s own authorization language to model common patterns of easily. We called the authorization model Permify Schema and it can be created on our playground as well as in any IDE or text editor.
+write schema
 
 ### Example
 

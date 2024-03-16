@@ -4,7 +4,7 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**watchWatch**](WatchApi.md#watchWatch) | **POST** /v1/tenants/{tenant_id}/watch | 
+[**watchWatch**](WatchApi.md#watchWatch) | **POST** /v1/tenants/{tenant_id}/watch | watch changes
 
 
 
@@ -12,9 +12,7 @@ Method | HTTP request | Description
 
 > StreamResultOfWatchResponse watchWatch(tenantId, body)
 
-
-
-The Permify Watch API acts as a real-time broadcaster that shows changes in the relation tuples.
+watch changes
 
 ### Example
 

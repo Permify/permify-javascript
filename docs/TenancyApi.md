@@ -4,7 +4,7 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**tenantsCreate**](TenancyApi.md#tenantsCreate) | **POST** /v1/tenants/create | create new tenant
+[**tenantsCreate**](TenancyApi.md#tenantsCreate) | **POST** /v1/tenants/create | create tenant
 [**tenantsDelete**](TenancyApi.md#tenantsDelete) | **DELETE** /v1/tenants/{id} | delete tenant
 [**tenantsList**](TenancyApi.md#tenantsList) | **POST** /v1/tenants/list | list tenants
 
@@ -14,9 +14,7 @@ Method | HTTP request | Description
 
 > TenantCreateResponse tenantsCreate(body)
 
-create new tenant
-
-Permify Multi Tenancy support you can create custom schemas for tenants and manage them in a single place. You can create a tenant with following API.  &lt;Warning&gt;We have a pre-inserted tenant - t1 - by default for the ones that don&#39;t use multi-tenancy.&lt;/Warning&gt;
+create tenant
 
 ### Example
 
@@ -61,8 +59,6 @@ No authorization required
 
 delete tenant
 
-You can delete a tenant with following API.
-
 ### Example
 
 ```javascript
@@ -105,8 +101,6 @@ No authorization required
 > TenantListResponse tenantsList(body)
 
 list tenants
-
-You can list tenants with following API.
 
 ### Example
 

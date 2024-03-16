@@ -16,8 +16,6 @@ Method | HTTP request | Description
 
 delete bundle
 
-The \&quot;Delete Bundle\&quot; API is designed for removing specific data bundles within a multi-tenant application environment. This API facilitates the deletion of a bundle, identified by its unique name, from a designated tenant&#39;s environment.
-
 ### Example
 
 ```javascript
@@ -63,8 +61,6 @@ No authorization required
 
 read bundle
 
-The \&quot;Read Bundle\&quot; API is a crucial tool for retrieving details of specific data bundles in a multi-tenant application setup. It is designed to access information about a bundle, uniquely identified by its name, within the specified tenant&#39;s environment.
-
 ### Example
 
 ```javascript
@@ -109,8 +105,6 @@ No authorization required
 > BundleWriteResponse bundleWrite(tenantId, body)
 
 write bundle
-
-The \&quot;Write Bundle\&quot; API is designed for handling data in a multi-tenant application environment. Its primary function is to write and delete data according to predefined structures. This API allows users to define or update data bundles, each distinguished by a unique name.
 
 ### Example
 

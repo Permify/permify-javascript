@@ -50,7 +50,6 @@ export default class BundleApi {
 
     /**
      * delete bundle
-     * The \"Delete Bundle\" API is designed for removing specific data bundles within a multi-tenant application environment. This API facilitates the deletion of a bundle, identified by its unique name, from a designated tenant's environment.
      * @param {String} tenantId 
      * @param {module:model/BundleDeleteRequest} body 
      * @param {module:permify/BundleApi~bundleDeleteCallback} callback The callback function, accepting three arguments: error, data, response
@@ -98,7 +97,6 @@ export default class BundleApi {
 
     /**
      * read bundle
-     * The \"Read Bundle\" API is a crucial tool for retrieving details of specific data bundles in a multi-tenant application setup. It is designed to access information about a bundle, uniquely identified by its name, within the specified tenant's environment.
      * @param {String} tenantId 
      * @param {module:model/BundleReadRequest} body 
      * @param {module:permify/BundleApi~bundleReadCallback} callback The callback function, accepting three arguments: error, data, response
@@ -146,7 +144,6 @@ export default class BundleApi {
 
     /**
      * write bundle
-     * The \"Write Bundle\" API is designed for handling data in a multi-tenant application environment. Its primary function is to write and delete data according to predefined structures. This API allows users to define or update data bundles, each distinguished by a unique name.
      * @param {String} tenantId 
      * @param {module:model/BundleWriteRequest} body 
      * @param {module:permify/BundleApi~bundleWriteCallback} callback The callback function, accepting three arguments: error, data, response

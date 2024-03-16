@@ -48,8 +48,7 @@ export default class TenancyApi {
      */
 
     /**
-     * create new tenant
-     * Permify Multi Tenancy support you can create custom schemas for tenants and manage them in a single place. You can create a tenant with following API.  <Warning>We have a pre-inserted tenant - t1 - by default for the ones that don't use multi-tenancy.</Warning>
+     * create tenant
      * @param {module:model/TenantCreateRequest} body TenantCreateRequest is the message used for the request to create a tenant.
      * @param {module:permify/TenancyApi~tenantsCreateCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/TenantCreateResponse}
@@ -91,7 +90,6 @@ export default class TenancyApi {
 
     /**
      * delete tenant
-     * You can delete a tenant with following API.
      * @param {String} id id is the unique identifier of the tenant to be deleted.
      * @param {module:permify/TenancyApi~tenantsDeleteCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/TenantDeleteResponse}
@@ -134,7 +132,6 @@ export default class TenancyApi {
 
     /**
      * list tenants
-     * You can list tenants with following API.
      * @param {module:model/TenantListRequest} body TenantListRequest is the message used for the request to list all tenants.
      * @param {module:permify/TenancyApi~tenantsListCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/TenantListResponse}
