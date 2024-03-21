@@ -21,7 +21,7 @@ import ApiClient from '../ApiClient';
 class PermissionExpandRequestMetadata {
     /**
      * Constructs a new <code>PermissionExpandRequestMetadata</code>.
-     * PermissionExpandRequestMetadata is the metadata associated with a PermissionExpandRequest.
+     * PermissionExpandRequestMetadata metadata for the PermissionExpandRequest.
      * @alias module:model/PermissionExpandRequestMetadata
      */
     constructor() { 
@@ -88,7 +88,7 @@ class PermissionExpandRequestMetadata {
 PermissionExpandRequestMetadata.prototype['schema_version'] = undefined;
 
 /**
- * Token associated with the snap.
+ * The snap token to avoid stale cache, see more details on [Snap Tokens](../../operations/snap-tokens).
  * @member {String} snap_token
  */
 PermissionExpandRequestMetadata.prototype['snap_token'] = undefined;

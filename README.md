@@ -104,7 +104,7 @@ var PermifyApi = require('permify_api');
 
 
 var api = new PermifyApi.BundleApi()
-var tenantId = "tenantId_example"; // {String} 
+var tenantId = "tenantId_example"; // {String} Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
 var body = new PermifyApi.BundleDeleteRequest(); // {BundleDeleteRequest} 
 var callback = function(error, data, response) {
   if (error) {

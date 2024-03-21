@@ -75,7 +75,7 @@ class RelationshipReadRequestMetadata {
 
 
 /**
- * snap_token represents a specific state or \"snapshot\" of the database.
+ * The snap token to avoid stale cache, see more details on [Snap Tokens](../../operations/snap-tokens)
  * @member {String} snap_token
  */
 RelationshipReadRequestMetadata.prototype['snap_token'] = undefined;

@@ -75,7 +75,7 @@ class BundleRunResponse {
 
 
 /**
- * Token related to the bundle execution.
+ * The snap token to avoid stale cache, see more details on [Snap Tokens](../../operations/snap-tokens)
  * @member {String} snap_token
  */
 BundleRunResponse.prototype['snap_token'] = undefined;

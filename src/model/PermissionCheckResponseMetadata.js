@@ -21,7 +21,7 @@ import ApiClient from '../ApiClient';
 class PermissionCheckResponseMetadata {
     /**
      * Constructs a new <code>PermissionCheckResponseMetadata</code>.
-     * PermissionCheckResponseMetadata is the metadata associated with a PermissionCheckResponse.
+     * PermissionCheckResponseMetadata metadata for the PermissionCheckResponse.
      * @alias module:model/PermissionCheckResponseMetadata
      */
     constructor() { 

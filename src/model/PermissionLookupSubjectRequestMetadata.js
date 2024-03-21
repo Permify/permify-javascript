@@ -21,7 +21,7 @@ import ApiClient from '../ApiClient';
 class PermissionLookupSubjectRequestMetadata {
     /**
      * Constructs a new <code>PermissionLookupSubjectRequestMetadata</code>.
-     * PermissionLookupSubjectRequestMetadata is the metadata associated with a PermissionLookupSubjectRequest.
+     * PermissionLookupSubjectRequestMetadata metadata for the PermissionLookupSubjectRequest.
      * @alias module:model/PermissionLookupSubjectRequestMetadata
      */
     constructor() { 
@@ -91,13 +91,13 @@ class PermissionLookupSubjectRequestMetadata {
 PermissionLookupSubjectRequestMetadata.prototype['schema_version'] = undefined;
 
 /**
- * Token associated with the snap.
+ * The snap token to avoid stale cache, see more details on [Snap Tokens](../../operations/snap-tokens).
  * @member {String} snap_token
  */
 PermissionLookupSubjectRequestMetadata.prototype['snap_token'] = undefined;
 
 /**
- * Depth of the check, must be greater than or equal to 3.
+ * Query limit when if recursive database queries got in loop.
  * @member {Number} depth
  */
 PermissionLookupSubjectRequestMetadata.prototype['depth'] = undefined;

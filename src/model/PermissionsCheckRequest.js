@@ -131,7 +131,7 @@ PermissionsCheckRequest.prototype['metadata'] = undefined;
 PermissionsCheckRequest.prototype['entity'] = undefined;
 
 /**
- * Name of the permission or relation, required, must start with a letter and can include alphanumeric and underscore, max 64 bytes.
+ * The action the user wants to perform on the resource
  * @member {String} permission
  */
 PermissionsCheckRequest.prototype['permission'] = undefined;

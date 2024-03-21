@@ -46,7 +46,7 @@ export default class WatchApi {
 
     /**
      * watch changes
-     * @param {String} tenantId Identifier of the tenant, required, and must match the pattern \"[a-zA-Z0-9-,]+\", max 64 bytes.
+     * @param {String} tenantId Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
      * @param {module:model/WatchWatchRequest} body 
      * @param {module:permify/WatchApi~watchWatchCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/StreamResultOfWatchResponse}

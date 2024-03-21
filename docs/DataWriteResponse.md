@@ -4,6 +4,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**snapToken** | **String** | snap_token is the token generated after the data write operation, representing a snapshot of the data. | [optional] 
+**snapToken** | **String** | The snap token to avoid stale cache, see more details on [Snap Tokens](../../operations/snap-tokens). | [optional] 
 
 

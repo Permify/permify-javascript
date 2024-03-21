@@ -75,7 +75,7 @@ class WatchWatchRequest {
 
 
 /**
- * Snap token to be used for watching.
+ * The snap token to avoid stale cache, see more details on [Snap Tokens](../../operations/snap-tokens).
  * @member {String} snap_token
  */
 WatchWatchRequest.prototype['snap_token'] = undefined;

@@ -22,7 +22,7 @@ list schema
 import PermifyApi from 'permify_api';
 
 let apiInstance = new PermifyApi.SchemaApi();
-let tenantId = "tenantId_example"; // String | tenant_id is a string that identifies the tenant. It must match the pattern \"[a-zA-Z0-9-,]+\", be a maximum of 64 bytes, and must not be empty.
+let tenantId = "tenantId_example"; // String | Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
 let body = new PermifyApi.SchemasListRequest(); // SchemasListRequest | 
 apiInstance.schemasList(tenantId, body, (error, data, response) => {
   if (error) {
@@ -38,7 +38,7 @@ apiInstance.schemasList(tenantId, body, (error, data, response) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tenantId** | **String**| tenant_id is a string that identifies the tenant. It must match the pattern \&quot;[a-zA-Z0-9-,]+\&quot;, be a maximum of 64 bytes, and must not be empty. | 
+ **tenantId** | **String**| Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant &lt;code&gt;t1&lt;/code&gt; for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes. | 
  **body** | [**SchemasListRequest**](SchemasListRequest.md)|  | 
 
 ### Return type
@@ -67,7 +67,7 @@ read schema
 import PermifyApi from 'permify_api';
 
 let apiInstance = new PermifyApi.SchemaApi();
-let tenantId = "tenantId_example"; // String | tenant_id is a string that identifies the tenant. It must match the pattern \"[a-zA-Z0-9-,]+\", be a maximum of 64 bytes, and must not be empty.
+let tenantId = "tenantId_example"; // String | Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
 let body = new PermifyApi.SchemasReadRequest(); // SchemasReadRequest | 
 apiInstance.schemasRead(tenantId, body, (error, data, response) => {
   if (error) {
@@ -83,7 +83,7 @@ apiInstance.schemasRead(tenantId, body, (error, data, response) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tenantId** | **String**| tenant_id is a string that identifies the tenant. It must match the pattern \&quot;[a-zA-Z0-9-,]+\&quot;, be a maximum of 64 bytes, and must not be empty. | 
+ **tenantId** | **String**| Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant &lt;code&gt;t1&lt;/code&gt; for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes. | 
  **body** | [**SchemasReadRequest**](SchemasReadRequest.md)|  | 
 
 ### Return type
@@ -112,7 +112,7 @@ write schema
 import PermifyApi from 'permify_api';
 
 let apiInstance = new PermifyApi.SchemaApi();
-let tenantId = "tenantId_example"; // String | tenant_id is a string that identifies the tenant. It must match the pattern \"[a-zA-Z0-9-,]+\", be a maximum of 64 bytes, and must not be empty.
+let tenantId = "tenantId_example"; // String | Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
 let body = new PermifyApi.SchemasWriteRequest(); // SchemasWriteRequest | 
 apiInstance.schemasWrite(tenantId, body, (error, data, response) => {
   if (error) {
@@ -128,7 +128,7 @@ apiInstance.schemasWrite(tenantId, body, (error, data, response) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tenantId** | **String**| tenant_id is a string that identifies the tenant. It must match the pattern \&quot;[a-zA-Z0-9-,]+\&quot;, be a maximum of 64 bytes, and must not be empty. | 
+ **tenantId** | **String**| Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant &lt;code&gt;t1&lt;/code&gt; for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes. | 
  **body** | [**SchemasWriteRequest**](SchemasWriteRequest.md)|  | 
 
 ### Return type

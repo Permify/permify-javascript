@@ -50,7 +50,7 @@ export default class SchemaApi {
 
     /**
      * list schema
-     * @param {String} tenantId tenant_id is a string that identifies the tenant. It must match the pattern \"[a-zA-Z0-9-,]+\", be a maximum of 64 bytes, and must not be empty.
+     * @param {String} tenantId Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
      * @param {module:model/SchemasListRequest} body 
      * @param {module:permify/SchemaApi~schemasListCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/SchemaListResponse}
@@ -97,7 +97,7 @@ export default class SchemaApi {
 
     /**
      * read schema
-     * @param {String} tenantId tenant_id is a string that identifies the tenant. It must match the pattern \"[a-zA-Z0-9-,]+\", be a maximum of 64 bytes, and must not be empty.
+     * @param {String} tenantId Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
      * @param {module:model/SchemasReadRequest} body 
      * @param {module:permify/SchemaApi~schemasReadCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/SchemaReadResponse}
@@ -144,7 +144,7 @@ export default class SchemaApi {
 
     /**
      * write schema
-     * @param {String} tenantId tenant_id is a string that identifies the tenant. It must match the pattern \"[a-zA-Z0-9-,]+\", be a maximum of 64 bytes, and must not be empty.
+     * @param {String} tenantId Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
      * @param {module:model/SchemasWriteRequest} body 
      * @param {module:permify/SchemaApi~schemasWriteCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/SchemaWriteResponse}

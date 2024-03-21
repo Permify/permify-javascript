@@ -74,6 +74,7 @@ class RelationshipDeleteResponse {
 
 
 /**
+ * The snap token to avoid stale cache, see more details on [Snap Tokens](../../operations/snap-tokens)
  * @member {String} snap_token
  */
 RelationshipDeleteResponse.prototype['snap_token'] = undefined;

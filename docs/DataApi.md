@@ -26,7 +26,7 @@ run bundle
 import PermifyApi from 'permify_api';
 
 let apiInstance = new PermifyApi.DataApi();
-let tenantId = "tenantId_example"; // String | 
+let tenantId = "tenantId_example"; // String | Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
 let body = new PermifyApi.BundleRunRequest(); // BundleRunRequest | 
 apiInstance.bundleRun(tenantId, body, (error, data, response) => {
   if (error) {
@@ -42,7 +42,7 @@ apiInstance.bundleRun(tenantId, body, (error, data, response) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tenantId** | **String**|  | 
+ **tenantId** | **String**| Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant &lt;code&gt;t1&lt;/code&gt; for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes. | 
  **body** | [**BundleRunRequest**](BundleRunRequest.md)|  | 
 
 ### Return type
@@ -71,7 +71,7 @@ read attributes
 import PermifyApi from 'permify_api';
 
 let apiInstance = new PermifyApi.DataApi();
-let tenantId = "tenantId_example"; // String | tenant_id represents the unique identifier of the tenant from which the attributes are being read.
+let tenantId = "tenantId_example"; // String | Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
 let body = new PermifyApi.DataAttributesReadRequest(); // DataAttributesReadRequest | 
 apiInstance.dataAttributesRead(tenantId, body, (error, data, response) => {
   if (error) {
@@ -87,7 +87,7 @@ apiInstance.dataAttributesRead(tenantId, body, (error, data, response) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tenantId** | **String**| tenant_id represents the unique identifier of the tenant from which the attributes are being read. | 
+ **tenantId** | **String**| Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant &lt;code&gt;t1&lt;/code&gt; for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes. | 
  **body** | [**DataAttributesReadRequest**](DataAttributesReadRequest.md)|  | 
 
 ### Return type
@@ -116,7 +116,7 @@ delete data
 import PermifyApi from 'permify_api';
 
 let apiInstance = new PermifyApi.DataApi();
-let tenantId = "tenantId_example"; // String | tenant_id represents the unique identifier of the tenant from which the data will be deleted.
+let tenantId = "tenantId_example"; // String | Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
 let body = new PermifyApi.DataDeleteRequest(); // DataDeleteRequest | 
 apiInstance.dataDelete(tenantId, body, (error, data, response) => {
   if (error) {
@@ -132,7 +132,7 @@ apiInstance.dataDelete(tenantId, body, (error, data, response) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tenantId** | **String**| tenant_id represents the unique identifier of the tenant from which the data will be deleted. | 
+ **tenantId** | **String**| Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant &lt;code&gt;t1&lt;/code&gt; for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes. | 
  **body** | [**DataDeleteRequest**](DataDeleteRequest.md)|  | 
 
 ### Return type
@@ -161,7 +161,7 @@ read relationships
 import PermifyApi from 'permify_api';
 
 let apiInstance = new PermifyApi.DataApi();
-let tenantId = "tenantId_example"; // String | tenant_id represents the unique identifier of the tenant for which relationships are read.
+let tenantId = "tenantId_example"; // String | Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
 let body = new PermifyApi.DataRelationshipsReadRequest(); // DataRelationshipsReadRequest | 
 apiInstance.dataRelationshipsRead(tenantId, body, (error, data, response) => {
   if (error) {
@@ -177,7 +177,7 @@ apiInstance.dataRelationshipsRead(tenantId, body, (error, data, response) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tenantId** | **String**| tenant_id represents the unique identifier of the tenant for which relationships are read. | 
+ **tenantId** | **String**| Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant &lt;code&gt;t1&lt;/code&gt; for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes. | 
  **body** | [**DataRelationshipsReadRequest**](DataRelationshipsReadRequest.md)|  | 
 
 ### Return type
@@ -206,7 +206,7 @@ write data
 import PermifyApi from 'permify_api';
 
 let apiInstance = new PermifyApi.DataApi();
-let tenantId = "tenantId_example"; // String | tenant_id represents the unique identifier of the tenant for which data is written.
+let tenantId = "tenantId_example"; // String | Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
 let body = new PermifyApi.DataWriteRequest(); // DataWriteRequest | 
 apiInstance.dataWrite(tenantId, body, (error, data, response) => {
   if (error) {
@@ -222,7 +222,7 @@ apiInstance.dataWrite(tenantId, body, (error, data, response) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tenantId** | **String**| tenant_id represents the unique identifier of the tenant for which data is written. | 
+ **tenantId** | **String**| Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant &lt;code&gt;t1&lt;/code&gt; for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes. | 
  **body** | [**DataWriteRequest**](DataWriteRequest.md)|  | 
 
 ### Return type
@@ -251,7 +251,7 @@ delete relationships
 import PermifyApi from 'permify_api';
 
 let apiInstance = new PermifyApi.DataApi();
-let tenantId = "tenantId_example"; // String | 
+let tenantId = "tenantId_example"; // String | Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
 let body = new PermifyApi.RelationshipDeleteRequest(); // RelationshipDeleteRequest | 
 apiInstance.relationshipsDelete(tenantId, body, (error, data, response) => {
   if (error) {
@@ -267,7 +267,7 @@ apiInstance.relationshipsDelete(tenantId, body, (error, data, response) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tenantId** | **String**|  | 
+ **tenantId** | **String**| Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant &lt;code&gt;t1&lt;/code&gt; for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes. | 
  **body** | [**RelationshipDeleteRequest**](RelationshipDeleteRequest.md)|  | 
 
 ### Return type
@@ -296,7 +296,7 @@ write relationships
 import PermifyApi from 'permify_api';
 
 let apiInstance = new PermifyApi.DataApi();
-let tenantId = "tenantId_example"; // String | Unique identifier for the tenant with specific constraints.
+let tenantId = "tenantId_example"; // String | Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
 let body = new PermifyApi.RelationshipsWriteRequest(); // RelationshipsWriteRequest | 
 apiInstance.relationshipsWrite(tenantId, body, (error, data, response) => {
   if (error) {
@@ -312,7 +312,7 @@ apiInstance.relationshipsWrite(tenantId, body, (error, data, response) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tenantId** | **String**| Unique identifier for the tenant with specific constraints. | 
+ **tenantId** | **String**| Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant &lt;code&gt;t1&lt;/code&gt; for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes. | 
  **body** | [**RelationshipsWriteRequest**](RelationshipsWriteRequest.md)|  | 
 
 ### Return type

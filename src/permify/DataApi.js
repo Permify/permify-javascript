@@ -58,7 +58,7 @@ export default class DataApi {
 
     /**
      * run bundle
-     * @param {String} tenantId 
+     * @param {String} tenantId Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
      * @param {module:model/BundleRunRequest} body 
      * @param {module:permify/DataApi~bundleRunCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/BundleRunResponse}
@@ -105,7 +105,7 @@ export default class DataApi {
 
     /**
      * read attributes
-     * @param {String} tenantId tenant_id represents the unique identifier of the tenant from which the attributes are being read.
+     * @param {String} tenantId Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
      * @param {module:model/DataAttributesReadRequest} body 
      * @param {module:permify/DataApi~dataAttributesReadCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/AttributeReadResponse}
@@ -152,7 +152,7 @@ export default class DataApi {
 
     /**
      * delete data
-     * @param {String} tenantId tenant_id represents the unique identifier of the tenant from which the data will be deleted.
+     * @param {String} tenantId Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
      * @param {module:model/DataDeleteRequest} body 
      * @param {module:permify/DataApi~dataDeleteCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/DataDeleteResponse}
@@ -199,7 +199,7 @@ export default class DataApi {
 
     /**
      * read relationships
-     * @param {String} tenantId tenant_id represents the unique identifier of the tenant for which relationships are read.
+     * @param {String} tenantId Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
      * @param {module:model/DataRelationshipsReadRequest} body 
      * @param {module:permify/DataApi~dataRelationshipsReadCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/RelationshipReadResponse}
@@ -246,7 +246,7 @@ export default class DataApi {
 
     /**
      * write data
-     * @param {String} tenantId tenant_id represents the unique identifier of the tenant for which data is written.
+     * @param {String} tenantId Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
      * @param {module:model/DataWriteRequest} body 
      * @param {module:permify/DataApi~dataWriteCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/DataWriteResponse}
@@ -293,7 +293,7 @@ export default class DataApi {
 
     /**
      * delete relationships
-     * @param {String} tenantId 
+     * @param {String} tenantId Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
      * @param {module:model/RelationshipDeleteRequest} body 
      * @param {module:permify/DataApi~relationshipsDeleteCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/RelationshipDeleteResponse}
@@ -340,7 +340,7 @@ export default class DataApi {
 
     /**
      * write relationships
-     * @param {String} tenantId Unique identifier for the tenant with specific constraints.
+     * @param {String} tenantId Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
      * @param {module:model/RelationshipsWriteRequest} body 
      * @param {module:permify/DataApi~relationshipsWriteCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/RelationshipWriteResponse}

@@ -55,7 +55,7 @@ export default class PermissionApi {
 
     /**
      * check api
-     * @param {String} tenantId Identifier of the tenant, required, and must match the pattern \"[a-zA-Z0-9-,]+\", max 64 bytes.
+     * @param {String} tenantId Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
      * @param {module:model/PermissionsCheckRequest} body 
      * @param {module:permify/PermissionApi~permissionsCheckCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/PermissionCheckResponse}
@@ -102,7 +102,7 @@ export default class PermissionApi {
 
     /**
      * expand api
-     * @param {String} tenantId Identifier of the tenant, required, and must match the pattern \"[a-zA-Z0-9-,]+\", max 64 bytes.
+     * @param {String} tenantId Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
      * @param {module:model/PermissionsExpandRequest} body 
      * @param {module:permify/PermissionApi~permissionsExpandCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/PermissionExpandResponse}
@@ -149,7 +149,7 @@ export default class PermissionApi {
 
     /**
      * lookup entity
-     * @param {String} tenantId Identifier of the tenant, required, and must match the pattern \"[a-zA-Z0-9-,]+\", max 64 bytes.
+     * @param {String} tenantId Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
      * @param {module:model/PermissionsLookupEntityRequest} body 
      * @param {module:permify/PermissionApi~permissionsLookupEntityCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/PermissionLookupEntityResponse}
@@ -196,7 +196,7 @@ export default class PermissionApi {
 
     /**
      * lookup entity stream
-     * @param {String} tenantId Identifier of the tenant, required, and must match the pattern \"[a-zA-Z0-9-,]+\", max 64 bytes.
+     * @param {String} tenantId Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
      * @param {module:model/PermissionsLookupEntityRequest} body 
      * @param {module:permify/PermissionApi~permissionsLookupEntityStreamCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/StreamResultOfPermissionLookupEntityStreamResponse}
@@ -243,7 +243,7 @@ export default class PermissionApi {
 
     /**
      * lookup-subject
-     * @param {String} tenantId Identifier of the tenant, required, and must match the pattern \"[a-zA-Z0-9-,]+\", max 64 bytes.
+     * @param {String} tenantId Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
      * @param {module:model/PermissionsLookupSubjectRequest} body 
      * @param {module:permify/PermissionApi~permissionsLookupSubjectCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/PermissionLookupSubjectResponse}
@@ -290,7 +290,7 @@ export default class PermissionApi {
 
     /**
      * subject permission
-     * @param {String} tenantId Identifier of the tenant, required, and must match the pattern \"[a-zA-Z0-9-,]+\", max 64 bytes.
+     * @param {String} tenantId Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
      * @param {module:model/PermissionsSubjectPermissionRequest} body 
      * @param {module:permify/PermissionApi~permissionsSubjectPermissionCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/PermissionSubjectPermissionResponse}

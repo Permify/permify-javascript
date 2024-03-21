@@ -75,7 +75,7 @@ class DataWriteResponse {
 
 
 /**
- * snap_token is the token generated after the data write operation, representing a snapshot of the data.
+ * The snap token to avoid stale cache, see more details on [Snap Tokens](../../operations/snap-tokens).
  * @member {String} snap_token
  */
 DataWriteResponse.prototype['snap_token'] = undefined;
