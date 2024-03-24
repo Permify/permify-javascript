@@ -13,7 +13,9 @@
 
 
 import ApiClient from "../ApiClient";
+import ItContainsTheTenantIdToIdentifyTheTenantAndMetadataOfTheSchemaToBeEditedWithTheCorrespondingEditsToVariousEntities from '../model/ItContainsTheTenantIdToIdentifyTheTenantAndMetadataOfTheSchemaToBeEditedWithTheCorrespondingEditsToVariousEntities';
 import SchemaListResponse from '../model/SchemaListResponse';
+import SchemaPartialWriteResponse from '../model/SchemaPartialWriteResponse';
 import SchemaReadResponse from '../model/SchemaReadResponse';
 import SchemaWriteResponse from '../model/SchemaWriteResponse';
 import SchemasListRequest from '../model/SchemasListRequest';
@@ -82,6 +84,53 @@ export default class SchemaApi {
       let returnType = SchemaListResponse;
       return this.apiClient.callApi(
         '/v1/tenants/{tenant_id}/schemas/list', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the schemasPartialWrite operation.
+     * @callback module:permify/SchemaApi~schemasPartialWriteCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/SchemaPartialWriteResponse} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * partially update your authorization model
+     * @param {String} tenantId tenant_id is a string that identifies the tenant. It must match the pattern \"[a-zA-Z0-9-,]+\", be a maximum of 64 bytes, and must not be empty.
+     * @param {module:model/ItContainsTheTenantIdToIdentifyTheTenantAndMetadataOfTheSchemaToBeEditedWithTheCorrespondingEditsToVariousEntities} body 
+     * @param {module:permify/SchemaApi~schemasPartialWriteCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/SchemaPartialWriteResponse}
+     */
+    schemasPartialWrite(tenantId, body, callback) {
+      let postBody = body;
+      // verify the required parameter 'tenantId' is set
+      if (tenantId === undefined || tenantId === null) {
+        throw new Error("Missing the required parameter 'tenantId' when calling schemasPartialWrite");
+      }
+      // verify the required parameter 'body' is set
+      if (body === undefined || body === null) {
+        throw new Error("Missing the required parameter 'body' when calling schemasPartialWrite");
+      }
+
+      let pathParams = {
+        'tenant_id': tenantId
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = [];
+      let contentTypes = ['application/json'];
+      let accepts = ['application/json'];
+      let returnType = SchemaPartialWriteResponse;
+      return this.apiClient.callApi(
+        '/v1/tenants/{tenant_id}/schemas/partial-write', 'PATCH',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );

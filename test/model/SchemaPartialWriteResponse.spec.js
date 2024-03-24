@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new PermifyApi.SchemaApi();
+    instance = new PermifyApi.SchemaPartialWriteResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,47 +47,19 @@
       object[property] = value;
   }
 
-  describe('SchemaApi', function() {
-    describe('schemasList', function() {
-      it('should call schemasList successfully', function(done) {
-        //uncomment below and update the code to test schemasList
-        //instance.schemasList(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
+  describe('SchemaPartialWriteResponse', function() {
+    it('should create an instance of SchemaPartialWriteResponse', function() {
+      // uncomment below and update the code to test SchemaPartialWriteResponse
+      //var instance = new PermifyApi.SchemaPartialWriteResponse();
+      //expect(instance).to.be.a(PermifyApi.SchemaPartialWriteResponse);
     });
-    describe('schemasPartialWrite', function() {
-      it('should call schemasPartialWrite successfully', function(done) {
-        //uncomment below and update the code to test schemasPartialWrite
-        //instance.schemasPartialWrite(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
+
+    it('should have the property schemaVersion (base name: "schema_version")', function() {
+      // uncomment below and update the code to test the property schemaVersion
+      //var instance = new PermifyApi.SchemaPartialWriteResponse();
+      //expect(instance).to.be();
     });
-    describe('schemasRead', function() {
-      it('should call schemasRead successfully', function(done) {
-        //uncomment below and update the code to test schemasRead
-        //instance.schemasRead(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
-    describe('schemasWrite', function() {
-      it('should call schemasWrite successfully', function(done) {
-        //uncomment below and update the code to test schemasWrite
-        //instance.schemasWrite(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
+
   });
 
 }));

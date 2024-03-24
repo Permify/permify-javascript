@@ -65,10 +65,12 @@ import Expr from './model/Expr';
 import ExprCall from './model/ExprCall';
 import FunctionType from './model/FunctionType';
 import Ident from './model/Ident';
+import ItContainsTheTenantIdToIdentifyTheTenantAndMetadataOfTheSchemaToBeEditedWithTheCorrespondingEditsToVariousEntities from './model/ItContainsTheTenantIdToIdentifyTheTenantAndMetadataOfTheSchemaToBeEditedWithTheCorrespondingEditsToVariousEntities';
 import Leaf from './model/Leaf';
 import ListType from './model/ListType';
 import MapType from './model/MapType';
 import NullValue from './model/NullValue';
+import Partials from './model/Partials';
 import PermissionCheckRequestMetadata from './model/PermissionCheckRequestMetadata';
 import PermissionCheckResponse from './model/PermissionCheckResponse';
 import PermissionCheckResponseMetadata from './model/PermissionCheckResponseMetadata';
@@ -104,6 +106,8 @@ import SchemaDefinition from './model/SchemaDefinition';
 import SchemaDefinitionReference from './model/SchemaDefinitionReference';
 import SchemaList from './model/SchemaList';
 import SchemaListResponse from './model/SchemaListResponse';
+import SchemaPartialWriteRequestMetadata from './model/SchemaPartialWriteRequestMetadata';
+import SchemaPartialWriteResponse from './model/SchemaPartialWriteResponse';
 import SchemaReadRequestMetadata from './model/SchemaReadRequestMetadata';
 import SchemaReadResponse from './model/SchemaReadResponse';
 import SchemaWriteResponse from './model/SchemaWriteResponse';
@@ -495,6 +499,12 @@ export {
     Ident,
 
     /**
+     * The ItContainsTheTenantIdToIdentifyTheTenantAndMetadataOfTheSchemaToBeEditedWithTheCorrespondingEditsToVariousEntities model constructor.
+     * @property {module:model/ItContainsTheTenantIdToIdentifyTheTenantAndMetadataOfTheSchemaToBeEditedWithTheCorrespondingEditsToVariousEntities}
+     */
+    ItContainsTheTenantIdToIdentifyTheTenantAndMetadataOfTheSchemaToBeEditedWithTheCorrespondingEditsToVariousEntities,
+
+    /**
      * The Leaf model constructor.
      * @property {module:model/Leaf}
      */
@@ -517,6 +527,12 @@ export {
      * @property {module:model/NullValue}
      */
     NullValue,
+
+    /**
+     * The Partials model constructor.
+     * @property {module:model/Partials}
+     */
+    Partials,
 
     /**
      * The PermissionCheckRequestMetadata model constructor.
@@ -727,6 +743,18 @@ export {
      * @property {module:model/SchemaListResponse}
      */
     SchemaListResponse,
+
+    /**
+     * The SchemaPartialWriteRequestMetadata model constructor.
+     * @property {module:model/SchemaPartialWriteRequestMetadata}
+     */
+    SchemaPartialWriteRequestMetadata,
+
+    /**
+     * The SchemaPartialWriteResponse model constructor.
+     * @property {module:model/SchemaPartialWriteResponse}
+     */
+    SchemaPartialWriteResponse,
 
     /**
      * The SchemaReadRequestMetadata model constructor.

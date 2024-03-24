@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new PermifyApi.SchemaApi();
+    instance = new PermifyApi.Partials();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,47 +47,31 @@
       object[property] = value;
   }
 
-  describe('SchemaApi', function() {
-    describe('schemasList', function() {
-      it('should call schemasList successfully', function(done) {
-        //uncomment below and update the code to test schemasList
-        //instance.schemasList(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
+  describe('Partials', function() {
+    it('should create an instance of Partials', function() {
+      // uncomment below and update the code to test Partials
+      //var instance = new PermifyApi.Partials();
+      //expect(instance).to.be.a(PermifyApi.Partials);
     });
-    describe('schemasPartialWrite', function() {
-      it('should call schemasPartialWrite successfully', function(done) {
-        //uncomment below and update the code to test schemasPartialWrite
-        //instance.schemasPartialWrite(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
+
+    it('should have the property write (base name: "write")', function() {
+      // uncomment below and update the code to test the property write
+      //var instance = new PermifyApi.Partials();
+      //expect(instance).to.be();
     });
-    describe('schemasRead', function() {
-      it('should call schemasRead successfully', function(done) {
-        //uncomment below and update the code to test schemasRead
-        //instance.schemasRead(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
+
+    it('should have the property _delete (base name: "delete")', function() {
+      // uncomment below and update the code to test the property _delete
+      //var instance = new PermifyApi.Partials();
+      //expect(instance).to.be();
     });
-    describe('schemasWrite', function() {
-      it('should call schemasWrite successfully', function(done) {
-        //uncomment below and update the code to test schemasWrite
-        //instance.schemasWrite(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
+
+    it('should have the property update (base name: "update")', function() {
+      // uncomment below and update the code to test the property update
+      //var instance = new PermifyApi.Partials();
+      //expect(instance).to.be();
     });
+
   });
 
 }));

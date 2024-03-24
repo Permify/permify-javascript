@@ -140,6 +140,7 @@ Class | Method | HTTP request | Description
 *PermifyApi.PermissionApi* | [**permissionsLookupSubject**](docs/PermissionApi.md#permissionsLookupSubject) | **POST** /v1/tenants/{tenant_id}/permissions/lookup-subject | lookup-subject
 *PermifyApi.PermissionApi* | [**permissionsSubjectPermission**](docs/PermissionApi.md#permissionsSubjectPermission) | **POST** /v1/tenants/{tenant_id}/permissions/subject-permission | subject permission
 *PermifyApi.SchemaApi* | [**schemasList**](docs/SchemaApi.md#schemasList) | **POST** /v1/tenants/{tenant_id}/schemas/list | list schema
+*PermifyApi.SchemaApi* | [**schemasPartialWrite**](docs/SchemaApi.md#schemasPartialWrite) | **PATCH** /v1/tenants/{tenant_id}/schemas/partial-write | partially update your authorization model
 *PermifyApi.SchemaApi* | [**schemasRead**](docs/SchemaApi.md#schemasRead) | **POST** /v1/tenants/{tenant_id}/schemas/read | read schema
 *PermifyApi.SchemaApi* | [**schemasWrite**](docs/SchemaApi.md#schemasWrite) | **POST** /v1/tenants/{tenant_id}/schemas/write | write schema
 *PermifyApi.TenancyApi* | [**tenantsCreate**](docs/TenancyApi.md#tenantsCreate) | **POST** /v1/tenants/create | create tenant
@@ -202,10 +203,12 @@ Class | Method | HTTP request | Description
  - [PermifyApi.ExprCall](docs/ExprCall.md)
  - [PermifyApi.FunctionType](docs/FunctionType.md)
  - [PermifyApi.Ident](docs/Ident.md)
+ - [PermifyApi.ItContainsTheTenantIdToIdentifyTheTenantAndMetadataOfTheSchemaToBeEditedWithTheCorrespondingEditsToVariousEntities](docs/ItContainsTheTenantIdToIdentifyTheTenantAndMetadataOfTheSchemaToBeEditedWithTheCorrespondingEditsToVariousEntities.md)
  - [PermifyApi.Leaf](docs/Leaf.md)
  - [PermifyApi.ListType](docs/ListType.md)
  - [PermifyApi.MapType](docs/MapType.md)
  - [PermifyApi.NullValue](docs/NullValue.md)
+ - [PermifyApi.Partials](docs/Partials.md)
  - [PermifyApi.PermissionCheckRequestMetadata](docs/PermissionCheckRequestMetadata.md)
  - [PermifyApi.PermissionCheckResponse](docs/PermissionCheckResponse.md)
  - [PermifyApi.PermissionCheckResponseMetadata](docs/PermissionCheckResponseMetadata.md)
@@ -241,6 +244,8 @@ Class | Method | HTTP request | Description
  - [PermifyApi.SchemaDefinitionReference](docs/SchemaDefinitionReference.md)
  - [PermifyApi.SchemaList](docs/SchemaList.md)
  - [PermifyApi.SchemaListResponse](docs/SchemaListResponse.md)
+ - [PermifyApi.SchemaPartialWriteRequestMetadata](docs/SchemaPartialWriteRequestMetadata.md)
+ - [PermifyApi.SchemaPartialWriteResponse](docs/SchemaPartialWriteResponse.md)
  - [PermifyApi.SchemaReadRequestMetadata](docs/SchemaReadRequestMetadata.md)
  - [PermifyApi.SchemaReadResponse](docs/SchemaReadResponse.md)
  - [PermifyApi.SchemaWriteResponse](docs/SchemaWriteResponse.md)
