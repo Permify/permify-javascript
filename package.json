@@ -1,6 +1,6 @@
 {
   "name": "permify_api",
-  "version": "v0.8.5",
+  "version": "v0.8.6",
   "description": "Permify is an open source authorization service for creating fine-grained and scalable authorization systems.",
   "license": "Apache-2.0 license",
   "main": "dist/index.js",
