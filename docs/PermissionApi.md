@@ -26,7 +26,7 @@ import PermifyApi from 'permify_api';
 
 let apiInstance = new PermifyApi.PermissionApi();
 let tenantId = "tenantId_example"; // String | Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
-let body = new PermifyApi.PermissionsCheckRequest(); // PermissionsCheckRequest | 
+let body = new PermifyApi.CheckBody(); // CheckBody | 
 apiInstance.permissionsCheck(tenantId, body, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -42,7 +42,7 @@ apiInstance.permissionsCheck(tenantId, body, (error, data, response) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **String**| Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant &lt;code&gt;t1&lt;/code&gt; for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes. | 
- **body** | [**PermissionsCheckRequest**](PermissionsCheckRequest.md)|  | 
+ **body** | [**CheckBody**](CheckBody.md)|  | 
 
 ### Return type
 
@@ -71,7 +71,7 @@ import PermifyApi from 'permify_api';
 
 let apiInstance = new PermifyApi.PermissionApi();
 let tenantId = "tenantId_example"; // String | Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
-let body = new PermifyApi.PermissionsExpandRequest(); // PermissionsExpandRequest | 
+let body = new PermifyApi.PermissionExpandBody(); // PermissionExpandBody | 
 apiInstance.permissionsExpand(tenantId, body, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -87,7 +87,7 @@ apiInstance.permissionsExpand(tenantId, body, (error, data, response) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **String**| Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant &lt;code&gt;t1&lt;/code&gt; for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes. | 
- **body** | [**PermissionsExpandRequest**](PermissionsExpandRequest.md)|  | 
+ **body** | [**PermissionExpandBody**](PermissionExpandBody.md)|  | 
 
 ### Return type
 
@@ -116,7 +116,7 @@ import PermifyApi from 'permify_api';
 
 let apiInstance = new PermifyApi.PermissionApi();
 let tenantId = "tenantId_example"; // String | Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
-let body = new PermifyApi.PermissionsLookupEntityRequest(); // PermissionsLookupEntityRequest | 
+let body = new PermifyApi.LookupEntityBody(); // LookupEntityBody | 
 apiInstance.permissionsLookupEntity(tenantId, body, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -132,7 +132,7 @@ apiInstance.permissionsLookupEntity(tenantId, body, (error, data, response) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **String**| Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant &lt;code&gt;t1&lt;/code&gt; for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes. | 
- **body** | [**PermissionsLookupEntityRequest**](PermissionsLookupEntityRequest.md)|  | 
+ **body** | [**LookupEntityBody**](LookupEntityBody.md)|  | 
 
 ### Return type
 
@@ -161,7 +161,7 @@ import PermifyApi from 'permify_api';
 
 let apiInstance = new PermifyApi.PermissionApi();
 let tenantId = "tenantId_example"; // String | Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
-let body = new PermifyApi.PermissionsLookupEntityRequest(); // PermissionsLookupEntityRequest | 
+let body = new PermifyApi.LookupEntityStreamBody(); // LookupEntityStreamBody | 
 apiInstance.permissionsLookupEntityStream(tenantId, body, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -177,7 +177,7 @@ apiInstance.permissionsLookupEntityStream(tenantId, body, (error, data, response
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **String**| Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant &lt;code&gt;t1&lt;/code&gt; for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes. | 
- **body** | [**PermissionsLookupEntityRequest**](PermissionsLookupEntityRequest.md)|  | 
+ **body** | [**LookupEntityStreamBody**](LookupEntityStreamBody.md)|  | 
 
 ### Return type
 
@@ -206,7 +206,7 @@ import PermifyApi from 'permify_api';
 
 let apiInstance = new PermifyApi.PermissionApi();
 let tenantId = "tenantId_example"; // String | Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
-let body = new PermifyApi.PermissionsLookupSubjectRequest(); // PermissionsLookupSubjectRequest | 
+let body = new PermifyApi.LookupSubjectBody(); // LookupSubjectBody | 
 apiInstance.permissionsLookupSubject(tenantId, body, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -222,7 +222,7 @@ apiInstance.permissionsLookupSubject(tenantId, body, (error, data, response) => 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **String**| Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant &lt;code&gt;t1&lt;/code&gt; for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes. | 
- **body** | [**PermissionsLookupSubjectRequest**](PermissionsLookupSubjectRequest.md)|  | 
+ **body** | [**LookupSubjectBody**](LookupSubjectBody.md)|  | 
 
 ### Return type
 
@@ -251,7 +251,7 @@ import PermifyApi from 'permify_api';
 
 let apiInstance = new PermifyApi.PermissionApi();
 let tenantId = "tenantId_example"; // String | Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
-let body = new PermifyApi.PermissionsSubjectPermissionRequest(); // PermissionsSubjectPermissionRequest | 
+let body = new PermifyApi.SubjectPermissionBody(); // SubjectPermissionBody | 
 apiInstance.permissionsSubjectPermission(tenantId, body, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -267,7 +267,7 @@ apiInstance.permissionsSubjectPermission(tenantId, body, (error, data, response)
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **String**| Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant &lt;code&gt;t1&lt;/code&gt; for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes. | 
- **body** | [**PermissionsSubjectPermissionRequest**](PermissionsSubjectPermissionRequest.md)|  | 
+ **body** | [**SubjectPermissionBody**](SubjectPermissionBody.md)|  | 
 
 ### Return type
 

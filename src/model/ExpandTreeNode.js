@@ -12,8 +12,8 @@
  */
 
 import ApiClient from '../ApiClient';
-import Expand from './Expand';
 import ExpandTreeNodeOperation from './ExpandTreeNodeOperation';
+import V1Expand from './V1Expand';
 
 /**
  * The ExpandTreeNode model module.
@@ -54,7 +54,7 @@ class ExpandTreeNode {
                 obj['operation'] = ExpandTreeNodeOperation.constructFromObject(data['operation']);
             }
             if (data.hasOwnProperty('children')) {
-                obj['children'] = ApiClient.convertToType(data['children'], [Expand]);
+                obj['children'] = ApiClient.convertToType(data['children'], [V1Expand]);
             }
         }
         return obj;
@@ -73,7 +73,7 @@ class ExpandTreeNode {
             }
             // validate the optional field `children` (array)
             for (const item of data['children']) {
-                Expand.validateJSON(item);
+                V1Expand.validateJSON(item);
             };
         }
 
@@ -91,7 +91,7 @@ class ExpandTreeNode {
 ExpandTreeNode.prototype['operation'] = undefined;
 
 /**
- * @member {Array.<module:model/Expand>} children
+ * @member {Array.<module:model/V1Expand>} children
  */
 ExpandTreeNode.prototype['children'] = undefined;
 

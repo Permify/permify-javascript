@@ -13,14 +13,14 @@
 
 
 import ApiClient from "../ApiClient";
-import ItContainsTheTenantIdToIdentifyTheTenantAndMetadataOfTheSchemaToBeEditedWithTheCorrespondingEditsToVariousEntities from '../model/ItContainsTheTenantIdToIdentifyTheTenantAndMetadataOfTheSchemaToBeEditedWithTheCorrespondingEditsToVariousEntities';
+import PartialWriteBody from '../model/PartialWriteBody';
+import SchemaListBody from '../model/SchemaListBody';
 import SchemaListResponse from '../model/SchemaListResponse';
 import SchemaPartialWriteResponse from '../model/SchemaPartialWriteResponse';
+import SchemaReadBody from '../model/SchemaReadBody';
 import SchemaReadResponse from '../model/SchemaReadResponse';
+import SchemaWriteBody from '../model/SchemaWriteBody';
 import SchemaWriteResponse from '../model/SchemaWriteResponse';
-import SchemasListRequest from '../model/SchemasListRequest';
-import SchemasReadRequest from '../model/SchemasReadRequest';
-import SchemasWriteRequest from '../model/SchemasWriteRequest';
 import Status from '../model/Status';
 
 /**
@@ -53,7 +53,7 @@ export default class SchemaApi {
     /**
      * list schema
      * @param {String} tenantId Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
-     * @param {module:model/SchemasListRequest} body 
+     * @param {module:model/SchemaListBody} body 
      * @param {module:api/SchemaApi~schemasListCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/SchemaListResponse}
      */
@@ -100,7 +100,7 @@ export default class SchemaApi {
     /**
      * partially update your authorization model
      * @param {String} tenantId tenant_id is a string that identifies the tenant. It must match the pattern \"[a-zA-Z0-9-,]+\", be a maximum of 64 bytes, and must not be empty.
-     * @param {module:model/ItContainsTheTenantIdToIdentifyTheTenantAndMetadataOfTheSchemaToBeEditedWithTheCorrespondingEditsToVariousEntities} body 
+     * @param {module:model/PartialWriteBody} body 
      * @param {module:api/SchemaApi~schemasPartialWriteCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/SchemaPartialWriteResponse}
      */
@@ -147,7 +147,7 @@ export default class SchemaApi {
     /**
      * read schema
      * @param {String} tenantId Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
-     * @param {module:model/SchemasReadRequest} body 
+     * @param {module:model/SchemaReadBody} body 
      * @param {module:api/SchemaApi~schemasReadCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/SchemaReadResponse}
      */
@@ -194,7 +194,7 @@ export default class SchemaApi {
     /**
      * write schema
      * @param {String} tenantId Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
-     * @param {module:model/SchemasWriteRequest} body 
+     * @param {module:model/SchemaWriteBody} body 
      * @param {module:api/SchemaApi~schemasWriteCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/SchemaWriteResponse}
      */

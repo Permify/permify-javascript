@@ -22,14 +22,14 @@ import AttributeFilter from './model/AttributeFilter';
 import AttributeReadRequestMetadata from './model/AttributeReadRequestMetadata';
 import AttributeReadResponse from './model/AttributeReadResponse';
 import AttributeType from './model/AttributeType';
-import BundleDeleteRequest from './model/BundleDeleteRequest';
+import BundleDeleteBody from './model/BundleDeleteBody';
 import BundleDeleteResponse from './model/BundleDeleteResponse';
-import BundleReadRequest from './model/BundleReadRequest';
+import BundleReadBody from './model/BundleReadBody';
 import BundleReadResponse from './model/BundleReadResponse';
-import BundleRunRequest from './model/BundleRunRequest';
 import BundleRunResponse from './model/BundleRunResponse';
-import BundleWriteRequest from './model/BundleWriteRequest';
+import BundleWriteBody from './model/BundleWriteBody';
 import BundleWriteResponse from './model/BundleWriteResponse';
+import CheckBody from './model/CheckBody';
 import CheckResult from './model/CheckResult';
 import CheckedExpr from './model/CheckedExpr';
 import Child from './model/Child';
@@ -41,23 +41,21 @@ import Context from './model/Context';
 import ContextAttribute from './model/ContextAttribute';
 import CreateList from './model/CreateList';
 import CreateStruct from './model/CreateStruct';
-import DataAttributesReadRequest from './model/DataAttributesReadRequest';
 import DataBundle from './model/DataBundle';
 import DataChange from './model/DataChange';
 import DataChangeOperation from './model/DataChangeOperation';
 import DataChanges from './model/DataChanges';
-import DataDeleteRequest from './model/DataDeleteRequest';
+import DataDeleteBody from './model/DataDeleteBody';
 import DataDeleteResponse from './model/DataDeleteResponse';
-import DataRelationshipsReadRequest from './model/DataRelationshipsReadRequest';
-import DataWriteRequest from './model/DataWriteRequest';
+import DataWriteBody from './model/DataWriteBody';
 import DataWriteRequestMetadata from './model/DataWriteRequestMetadata';
 import DataWriteResponse from './model/DataWriteResponse';
+import DeleteRelationshipsBody from './model/DeleteRelationshipsBody';
 import Entity from './model/Entity';
 import EntityDefinition from './model/EntityDefinition';
 import EntityDefinitionReference from './model/EntityDefinitionReference';
 import EntityFilter from './model/EntityFilter';
 import Entry from './model/Entry';
-import Expand from './model/Expand';
 import ExpandLeaf from './model/ExpandLeaf';
 import ExpandTreeNode from './model/ExpandTreeNode';
 import ExpandTreeNodeOperation from './model/ExpandTreeNodeOperation';
@@ -65,16 +63,19 @@ import Expr from './model/Expr';
 import ExprCall from './model/ExprCall';
 import FunctionType from './model/FunctionType';
 import Ident from './model/Ident';
-import ItContainsTheTenantIdToIdentifyTheTenantAndMetadataOfTheSchemaToBeEditedWithTheCorrespondingEditsToVariousEntities from './model/ItContainsTheTenantIdToIdentifyTheTenantAndMetadataOfTheSchemaToBeEditedWithTheCorrespondingEditsToVariousEntities';
 import Leaf from './model/Leaf';
 import ListType from './model/ListType';
+import LookupEntityBody from './model/LookupEntityBody';
+import LookupEntityStreamBody from './model/LookupEntityStreamBody';
+import LookupSubjectBody from './model/LookupSubjectBody';
 import MapType from './model/MapType';
-import NullValue from './model/NullValue';
+import PartialWriteBody from './model/PartialWriteBody';
 import Partials from './model/Partials';
 import PermissionCheckRequestMetadata from './model/PermissionCheckRequestMetadata';
 import PermissionCheckResponse from './model/PermissionCheckResponse';
 import PermissionCheckResponseMetadata from './model/PermissionCheckResponseMetadata';
 import PermissionDefinition from './model/PermissionDefinition';
+import PermissionExpandBody from './model/PermissionExpandBody';
 import PermissionExpandRequestMetadata from './model/PermissionExpandRequestMetadata';
 import PermissionExpandResponse from './model/PermissionExpandResponse';
 import PermissionLookupEntityRequestMetadata from './model/PermissionLookupEntityRequestMetadata';
@@ -84,36 +85,32 @@ import PermissionLookupSubjectRequestMetadata from './model/PermissionLookupSubj
 import PermissionLookupSubjectResponse from './model/PermissionLookupSubjectResponse';
 import PermissionSubjectPermissionRequestMetadata from './model/PermissionSubjectPermissionRequestMetadata';
 import PermissionSubjectPermissionResponse from './model/PermissionSubjectPermissionResponse';
-import PermissionsCheckRequest from './model/PermissionsCheckRequest';
-import PermissionsExpandRequest from './model/PermissionsExpandRequest';
-import PermissionsLookupEntityRequest from './model/PermissionsLookupEntityRequest';
-import PermissionsLookupSubjectRequest from './model/PermissionsLookupSubjectRequest';
-import PermissionsSubjectPermissionRequest from './model/PermissionsSubjectPermissionRequest';
 import PrimitiveType from './model/PrimitiveType';
+import ReadAttributesBody from './model/ReadAttributesBody';
+import ReadRelationshipsBody from './model/ReadRelationshipsBody';
 import RelationDefinition from './model/RelationDefinition';
 import RelationReference from './model/RelationReference';
-import RelationshipDeleteRequest from './model/RelationshipDeleteRequest';
 import RelationshipDeleteResponse from './model/RelationshipDeleteResponse';
 import RelationshipReadRequestMetadata from './model/RelationshipReadRequestMetadata';
 import RelationshipReadResponse from './model/RelationshipReadResponse';
 import RelationshipWriteRequestMetadata from './model/RelationshipWriteRequestMetadata';
 import RelationshipWriteResponse from './model/RelationshipWriteResponse';
-import RelationshipsWriteRequest from './model/RelationshipsWriteRequest';
 import Rewrite from './model/Rewrite';
 import RewriteOperation from './model/RewriteOperation';
 import RuleDefinition from './model/RuleDefinition';
+import RunBundleBody from './model/RunBundleBody';
 import SchemaDefinition from './model/SchemaDefinition';
 import SchemaDefinitionReference from './model/SchemaDefinitionReference';
 import SchemaList from './model/SchemaList';
+import SchemaListBody from './model/SchemaListBody';
 import SchemaListResponse from './model/SchemaListResponse';
 import SchemaPartialWriteRequestMetadata from './model/SchemaPartialWriteRequestMetadata';
 import SchemaPartialWriteResponse from './model/SchemaPartialWriteResponse';
+import SchemaReadBody from './model/SchemaReadBody';
 import SchemaReadRequestMetadata from './model/SchemaReadRequestMetadata';
 import SchemaReadResponse from './model/SchemaReadResponse';
+import SchemaWriteBody from './model/SchemaWriteBody';
 import SchemaWriteResponse from './model/SchemaWriteResponse';
-import SchemasListRequest from './model/SchemasListRequest';
-import SchemasReadRequest from './model/SchemasReadRequest';
-import SchemasWriteRequest from './model/SchemasWriteRequest';
 import Select from './model/Select';
 import SourceInfo from './model/SourceInfo';
 import Status from './model/Status';
@@ -121,6 +118,7 @@ import StreamResultOfPermissionLookupEntityStreamResponse from './model/StreamRe
 import StreamResultOfWatchResponse from './model/StreamResultOfWatchResponse';
 import Subject from './model/Subject';
 import SubjectFilter from './model/SubjectFilter';
+import SubjectPermissionBody from './model/SubjectPermissionBody';
 import Subjects from './model/Subjects';
 import Tenant from './model/Tenant';
 import TenantCreateRequest from './model/TenantCreateRequest';
@@ -133,13 +131,15 @@ import TupleFilter from './model/TupleFilter';
 import TupleSet from './model/TupleSet';
 import TupleToUserSet from './model/TupleToUserSet';
 import V1Call from './model/V1Call';
+import V1Expand from './model/V1Expand';
 import V1Operation from './model/V1Operation';
 import V1alpha1Reference from './model/V1alpha1Reference';
 import V1alpha1Type from './model/V1alpha1Type';
 import Values from './model/Values';
+import WatchBody from './model/WatchBody';
 import WatchResponse from './model/WatchResponse';
-import WatchWatchRequest from './model/WatchWatchRequest';
 import WellKnownType from './model/WellKnownType';
+import WriteRelationshipsBody from './model/WriteRelationshipsBody';
 import BundleApi from './api/BundleApi';
 import DataApi from './api/DataApi';
 import PermissionApi from './api/PermissionApi';
@@ -241,10 +241,10 @@ export {
     AttributeType,
 
     /**
-     * The BundleDeleteRequest model constructor.
-     * @property {module:model/BundleDeleteRequest}
+     * The BundleDeleteBody model constructor.
+     * @property {module:model/BundleDeleteBody}
      */
-    BundleDeleteRequest,
+    BundleDeleteBody,
 
     /**
      * The BundleDeleteResponse model constructor.
@@ -253,10 +253,10 @@ export {
     BundleDeleteResponse,
 
     /**
-     * The BundleReadRequest model constructor.
-     * @property {module:model/BundleReadRequest}
+     * The BundleReadBody model constructor.
+     * @property {module:model/BundleReadBody}
      */
-    BundleReadRequest,
+    BundleReadBody,
 
     /**
      * The BundleReadResponse model constructor.
@@ -265,28 +265,28 @@ export {
     BundleReadResponse,
 
     /**
-     * The BundleRunRequest model constructor.
-     * @property {module:model/BundleRunRequest}
-     */
-    BundleRunRequest,
-
-    /**
      * The BundleRunResponse model constructor.
      * @property {module:model/BundleRunResponse}
      */
     BundleRunResponse,
 
     /**
-     * The BundleWriteRequest model constructor.
-     * @property {module:model/BundleWriteRequest}
+     * The BundleWriteBody model constructor.
+     * @property {module:model/BundleWriteBody}
      */
-    BundleWriteRequest,
+    BundleWriteBody,
 
     /**
      * The BundleWriteResponse model constructor.
      * @property {module:model/BundleWriteResponse}
      */
     BundleWriteResponse,
+
+    /**
+     * The CheckBody model constructor.
+     * @property {module:model/CheckBody}
+     */
+    CheckBody,
 
     /**
      * The CheckResult model constructor.
@@ -355,12 +355,6 @@ export {
     CreateStruct,
 
     /**
-     * The DataAttributesReadRequest model constructor.
-     * @property {module:model/DataAttributesReadRequest}
-     */
-    DataAttributesReadRequest,
-
-    /**
      * The DataBundle model constructor.
      * @property {module:model/DataBundle}
      */
@@ -385,10 +379,10 @@ export {
     DataChanges,
 
     /**
-     * The DataDeleteRequest model constructor.
-     * @property {module:model/DataDeleteRequest}
+     * The DataDeleteBody model constructor.
+     * @property {module:model/DataDeleteBody}
      */
-    DataDeleteRequest,
+    DataDeleteBody,
 
     /**
      * The DataDeleteResponse model constructor.
@@ -397,16 +391,10 @@ export {
     DataDeleteResponse,
 
     /**
-     * The DataRelationshipsReadRequest model constructor.
-     * @property {module:model/DataRelationshipsReadRequest}
+     * The DataWriteBody model constructor.
+     * @property {module:model/DataWriteBody}
      */
-    DataRelationshipsReadRequest,
-
-    /**
-     * The DataWriteRequest model constructor.
-     * @property {module:model/DataWriteRequest}
-     */
-    DataWriteRequest,
+    DataWriteBody,
 
     /**
      * The DataWriteRequestMetadata model constructor.
@@ -419,6 +407,12 @@ export {
      * @property {module:model/DataWriteResponse}
      */
     DataWriteResponse,
+
+    /**
+     * The DeleteRelationshipsBody model constructor.
+     * @property {module:model/DeleteRelationshipsBody}
+     */
+    DeleteRelationshipsBody,
 
     /**
      * The Entity model constructor.
@@ -449,12 +443,6 @@ export {
      * @property {module:model/Entry}
      */
     Entry,
-
-    /**
-     * The Expand model constructor.
-     * @property {module:model/Expand}
-     */
-    Expand,
 
     /**
      * The ExpandLeaf model constructor.
@@ -499,12 +487,6 @@ export {
     Ident,
 
     /**
-     * The ItContainsTheTenantIdToIdentifyTheTenantAndMetadataOfTheSchemaToBeEditedWithTheCorrespondingEditsToVariousEntities model constructor.
-     * @property {module:model/ItContainsTheTenantIdToIdentifyTheTenantAndMetadataOfTheSchemaToBeEditedWithTheCorrespondingEditsToVariousEntities}
-     */
-    ItContainsTheTenantIdToIdentifyTheTenantAndMetadataOfTheSchemaToBeEditedWithTheCorrespondingEditsToVariousEntities,
-
-    /**
      * The Leaf model constructor.
      * @property {module:model/Leaf}
      */
@@ -517,16 +499,34 @@ export {
     ListType,
 
     /**
+     * The LookupEntityBody model constructor.
+     * @property {module:model/LookupEntityBody}
+     */
+    LookupEntityBody,
+
+    /**
+     * The LookupEntityStreamBody model constructor.
+     * @property {module:model/LookupEntityStreamBody}
+     */
+    LookupEntityStreamBody,
+
+    /**
+     * The LookupSubjectBody model constructor.
+     * @property {module:model/LookupSubjectBody}
+     */
+    LookupSubjectBody,
+
+    /**
      * The MapType model constructor.
      * @property {module:model/MapType}
      */
     MapType,
 
     /**
-     * The NullValue model constructor.
-     * @property {module:model/NullValue}
+     * The PartialWriteBody model constructor.
+     * @property {module:model/PartialWriteBody}
      */
-    NullValue,
+    PartialWriteBody,
 
     /**
      * The Partials model constructor.
@@ -557,6 +557,12 @@ export {
      * @property {module:model/PermissionDefinition}
      */
     PermissionDefinition,
+
+    /**
+     * The PermissionExpandBody model constructor.
+     * @property {module:model/PermissionExpandBody}
+     */
+    PermissionExpandBody,
 
     /**
      * The PermissionExpandRequestMetadata model constructor.
@@ -613,40 +619,22 @@ export {
     PermissionSubjectPermissionResponse,
 
     /**
-     * The PermissionsCheckRequest model constructor.
-     * @property {module:model/PermissionsCheckRequest}
-     */
-    PermissionsCheckRequest,
-
-    /**
-     * The PermissionsExpandRequest model constructor.
-     * @property {module:model/PermissionsExpandRequest}
-     */
-    PermissionsExpandRequest,
-
-    /**
-     * The PermissionsLookupEntityRequest model constructor.
-     * @property {module:model/PermissionsLookupEntityRequest}
-     */
-    PermissionsLookupEntityRequest,
-
-    /**
-     * The PermissionsLookupSubjectRequest model constructor.
-     * @property {module:model/PermissionsLookupSubjectRequest}
-     */
-    PermissionsLookupSubjectRequest,
-
-    /**
-     * The PermissionsSubjectPermissionRequest model constructor.
-     * @property {module:model/PermissionsSubjectPermissionRequest}
-     */
-    PermissionsSubjectPermissionRequest,
-
-    /**
      * The PrimitiveType model constructor.
      * @property {module:model/PrimitiveType}
      */
     PrimitiveType,
+
+    /**
+     * The ReadAttributesBody model constructor.
+     * @property {module:model/ReadAttributesBody}
+     */
+    ReadAttributesBody,
+
+    /**
+     * The ReadRelationshipsBody model constructor.
+     * @property {module:model/ReadRelationshipsBody}
+     */
+    ReadRelationshipsBody,
 
     /**
      * The RelationDefinition model constructor.
@@ -659,12 +647,6 @@ export {
      * @property {module:model/RelationReference}
      */
     RelationReference,
-
-    /**
-     * The RelationshipDeleteRequest model constructor.
-     * @property {module:model/RelationshipDeleteRequest}
-     */
-    RelationshipDeleteRequest,
 
     /**
      * The RelationshipDeleteResponse model constructor.
@@ -697,12 +679,6 @@ export {
     RelationshipWriteResponse,
 
     /**
-     * The RelationshipsWriteRequest model constructor.
-     * @property {module:model/RelationshipsWriteRequest}
-     */
-    RelationshipsWriteRequest,
-
-    /**
      * The Rewrite model constructor.
      * @property {module:model/Rewrite}
      */
@@ -719,6 +695,12 @@ export {
      * @property {module:model/RuleDefinition}
      */
     RuleDefinition,
+
+    /**
+     * The RunBundleBody model constructor.
+     * @property {module:model/RunBundleBody}
+     */
+    RunBundleBody,
 
     /**
      * The SchemaDefinition model constructor.
@@ -739,6 +721,12 @@ export {
     SchemaList,
 
     /**
+     * The SchemaListBody model constructor.
+     * @property {module:model/SchemaListBody}
+     */
+    SchemaListBody,
+
+    /**
      * The SchemaListResponse model constructor.
      * @property {module:model/SchemaListResponse}
      */
@@ -757,6 +745,12 @@ export {
     SchemaPartialWriteResponse,
 
     /**
+     * The SchemaReadBody model constructor.
+     * @property {module:model/SchemaReadBody}
+     */
+    SchemaReadBody,
+
+    /**
      * The SchemaReadRequestMetadata model constructor.
      * @property {module:model/SchemaReadRequestMetadata}
      */
@@ -769,28 +763,16 @@ export {
     SchemaReadResponse,
 
     /**
+     * The SchemaWriteBody model constructor.
+     * @property {module:model/SchemaWriteBody}
+     */
+    SchemaWriteBody,
+
+    /**
      * The SchemaWriteResponse model constructor.
      * @property {module:model/SchemaWriteResponse}
      */
     SchemaWriteResponse,
-
-    /**
-     * The SchemasListRequest model constructor.
-     * @property {module:model/SchemasListRequest}
-     */
-    SchemasListRequest,
-
-    /**
-     * The SchemasReadRequest model constructor.
-     * @property {module:model/SchemasReadRequest}
-     */
-    SchemasReadRequest,
-
-    /**
-     * The SchemasWriteRequest model constructor.
-     * @property {module:model/SchemasWriteRequest}
-     */
-    SchemasWriteRequest,
 
     /**
      * The Select model constructor.
@@ -833,6 +815,12 @@ export {
      * @property {module:model/SubjectFilter}
      */
     SubjectFilter,
+
+    /**
+     * The SubjectPermissionBody model constructor.
+     * @property {module:model/SubjectPermissionBody}
+     */
+    SubjectPermissionBody,
 
     /**
      * The Subjects model constructor.
@@ -907,6 +895,12 @@ export {
     V1Call,
 
     /**
+     * The V1Expand model constructor.
+     * @property {module:model/V1Expand}
+     */
+    V1Expand,
+
+    /**
      * The V1Operation model constructor.
      * @property {module:model/V1Operation}
      */
@@ -931,22 +925,28 @@ export {
     Values,
 
     /**
+     * The WatchBody model constructor.
+     * @property {module:model/WatchBody}
+     */
+    WatchBody,
+
+    /**
      * The WatchResponse model constructor.
      * @property {module:model/WatchResponse}
      */
     WatchResponse,
 
     /**
-     * The WatchWatchRequest model constructor.
-     * @property {module:model/WatchWatchRequest}
-     */
-    WatchWatchRequest,
-
-    /**
      * The WellKnownType model constructor.
      * @property {module:model/WellKnownType}
      */
     WellKnownType,
+
+    /**
+     * The WriteRelationshipsBody model constructor.
+     * @property {module:model/WriteRelationshipsBody}
+     */
+    WriteRelationshipsBody,
 
     /**
     * The BundleApi service constructor.

@@ -20,13 +20,6 @@ import ApiClient from '../ApiClient';
 export default class DataChangeOperation {
     
         /**
-         * value: "OPERATION_UNSPECIFIED"
-         * @const
-         */
-        "UNSPECIFIED" = "OPERATION_UNSPECIFIED";
-
-    
-        /**
          * value: "OPERATION_CREATE"
          * @const
          */

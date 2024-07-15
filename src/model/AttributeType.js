@@ -20,13 +20,6 @@ import ApiClient from '../ApiClient';
 export default class AttributeType {
     
         /**
-         * value: "ATTRIBUTE_TYPE_UNSPECIFIED"
-         * @const
-         */
-        "UNSPECIFIED" = "ATTRIBUTE_TYPE_UNSPECIFIED";
-
-    
-        /**
          * value: "ATTRIBUTE_TYPE_BOOLEAN"
          * @const
          */

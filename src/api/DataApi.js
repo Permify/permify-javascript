@@ -14,20 +14,20 @@
 
 import ApiClient from "../ApiClient";
 import AttributeReadResponse from '../model/AttributeReadResponse';
-import BundleRunRequest from '../model/BundleRunRequest';
 import BundleRunResponse from '../model/BundleRunResponse';
-import DataAttributesReadRequest from '../model/DataAttributesReadRequest';
-import DataDeleteRequest from '../model/DataDeleteRequest';
+import DataDeleteBody from '../model/DataDeleteBody';
 import DataDeleteResponse from '../model/DataDeleteResponse';
-import DataRelationshipsReadRequest from '../model/DataRelationshipsReadRequest';
-import DataWriteRequest from '../model/DataWriteRequest';
+import DataWriteBody from '../model/DataWriteBody';
 import DataWriteResponse from '../model/DataWriteResponse';
-import RelationshipDeleteRequest from '../model/RelationshipDeleteRequest';
+import DeleteRelationshipsBody from '../model/DeleteRelationshipsBody';
+import ReadAttributesBody from '../model/ReadAttributesBody';
+import ReadRelationshipsBody from '../model/ReadRelationshipsBody';
 import RelationshipDeleteResponse from '../model/RelationshipDeleteResponse';
 import RelationshipReadResponse from '../model/RelationshipReadResponse';
 import RelationshipWriteResponse from '../model/RelationshipWriteResponse';
-import RelationshipsWriteRequest from '../model/RelationshipsWriteRequest';
+import RunBundleBody from '../model/RunBundleBody';
 import Status from '../model/Status';
+import WriteRelationshipsBody from '../model/WriteRelationshipsBody';
 
 /**
 * Data service.
@@ -59,7 +59,7 @@ export default class DataApi {
     /**
      * run bundle
      * @param {String} tenantId Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
-     * @param {module:model/BundleRunRequest} body 
+     * @param {module:model/RunBundleBody} body 
      * @param {module:api/DataApi~bundleRunCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/BundleRunResponse}
      */
@@ -106,7 +106,7 @@ export default class DataApi {
     /**
      * read attributes
      * @param {String} tenantId Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
-     * @param {module:model/DataAttributesReadRequest} body 
+     * @param {module:model/ReadAttributesBody} body 
      * @param {module:api/DataApi~dataAttributesReadCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/AttributeReadResponse}
      */
@@ -153,7 +153,7 @@ export default class DataApi {
     /**
      * delete data
      * @param {String} tenantId Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
-     * @param {module:model/DataDeleteRequest} body 
+     * @param {module:model/DataDeleteBody} body 
      * @param {module:api/DataApi~dataDeleteCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/DataDeleteResponse}
      */
@@ -200,7 +200,7 @@ export default class DataApi {
     /**
      * read relationships
      * @param {String} tenantId Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
-     * @param {module:model/DataRelationshipsReadRequest} body 
+     * @param {module:model/ReadRelationshipsBody} body 
      * @param {module:api/DataApi~dataRelationshipsReadCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/RelationshipReadResponse}
      */
@@ -247,7 +247,7 @@ export default class DataApi {
     /**
      * write data
      * @param {String} tenantId Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
-     * @param {module:model/DataWriteRequest} body 
+     * @param {module:model/DataWriteBody} body 
      * @param {module:api/DataApi~dataWriteCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/DataWriteResponse}
      */
@@ -294,7 +294,7 @@ export default class DataApi {
     /**
      * delete relationships
      * @param {String} tenantId Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
-     * @param {module:model/RelationshipDeleteRequest} body 
+     * @param {module:model/DeleteRelationshipsBody} body 
      * @param {module:api/DataApi~relationshipsDeleteCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/RelationshipDeleteResponse}
      */
@@ -341,7 +341,7 @@ export default class DataApi {
     /**
      * write relationships
      * @param {String} tenantId Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
-     * @param {module:model/RelationshipsWriteRequest} body 
+     * @param {module:model/WriteRelationshipsBody} body 
      * @param {module:api/DataApi~relationshipsWriteCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/RelationshipWriteResponse}
      */

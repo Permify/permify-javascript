@@ -15,7 +15,7 @@
 import ApiClient from "../ApiClient";
 import Status from '../model/Status';
 import StreamResultOfWatchResponse from '../model/StreamResultOfWatchResponse';
-import WatchWatchRequest from '../model/WatchWatchRequest';
+import WatchBody from '../model/WatchBody';
 
 /**
 * Watch service.
@@ -47,7 +47,7 @@ export default class WatchApi {
     /**
      * watch changes
      * @param {String} tenantId Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
-     * @param {module:model/WatchWatchRequest} body 
+     * @param {module:model/WatchBody} body 
      * @param {module:api/WatchApi~watchWatchCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/StreamResultOfWatchResponse}
      */

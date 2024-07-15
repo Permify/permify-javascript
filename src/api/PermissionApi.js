@@ -13,18 +13,19 @@
 
 
 import ApiClient from "../ApiClient";
+import CheckBody from '../model/CheckBody';
+import LookupEntityBody from '../model/LookupEntityBody';
+import LookupEntityStreamBody from '../model/LookupEntityStreamBody';
+import LookupSubjectBody from '../model/LookupSubjectBody';
 import PermissionCheckResponse from '../model/PermissionCheckResponse';
+import PermissionExpandBody from '../model/PermissionExpandBody';
 import PermissionExpandResponse from '../model/PermissionExpandResponse';
 import PermissionLookupEntityResponse from '../model/PermissionLookupEntityResponse';
 import PermissionLookupSubjectResponse from '../model/PermissionLookupSubjectResponse';
 import PermissionSubjectPermissionResponse from '../model/PermissionSubjectPermissionResponse';
-import PermissionsCheckRequest from '../model/PermissionsCheckRequest';
-import PermissionsExpandRequest from '../model/PermissionsExpandRequest';
-import PermissionsLookupEntityRequest from '../model/PermissionsLookupEntityRequest';
-import PermissionsLookupSubjectRequest from '../model/PermissionsLookupSubjectRequest';
-import PermissionsSubjectPermissionRequest from '../model/PermissionsSubjectPermissionRequest';
 import Status from '../model/Status';
 import StreamResultOfPermissionLookupEntityStreamResponse from '../model/StreamResultOfPermissionLookupEntityStreamResponse';
+import SubjectPermissionBody from '../model/SubjectPermissionBody';
 
 /**
 * Permission service.
@@ -56,7 +57,7 @@ export default class PermissionApi {
     /**
      * check api
      * @param {String} tenantId Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
-     * @param {module:model/PermissionsCheckRequest} body 
+     * @param {module:model/CheckBody} body 
      * @param {module:api/PermissionApi~permissionsCheckCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/PermissionCheckResponse}
      */
@@ -103,7 +104,7 @@ export default class PermissionApi {
     /**
      * expand api
      * @param {String} tenantId Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
-     * @param {module:model/PermissionsExpandRequest} body 
+     * @param {module:model/PermissionExpandBody} body 
      * @param {module:api/PermissionApi~permissionsExpandCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/PermissionExpandResponse}
      */
@@ -150,7 +151,7 @@ export default class PermissionApi {
     /**
      * lookup entity
      * @param {String} tenantId Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
-     * @param {module:model/PermissionsLookupEntityRequest} body 
+     * @param {module:model/LookupEntityBody} body 
      * @param {module:api/PermissionApi~permissionsLookupEntityCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/PermissionLookupEntityResponse}
      */
@@ -197,7 +198,7 @@ export default class PermissionApi {
     /**
      * lookup entity stream
      * @param {String} tenantId Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
-     * @param {module:model/PermissionsLookupEntityRequest} body 
+     * @param {module:model/LookupEntityStreamBody} body 
      * @param {module:api/PermissionApi~permissionsLookupEntityStreamCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/StreamResultOfPermissionLookupEntityStreamResponse}
      */
@@ -244,7 +245,7 @@ export default class PermissionApi {
     /**
      * lookup-subject
      * @param {String} tenantId Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
-     * @param {module:model/PermissionsLookupSubjectRequest} body 
+     * @param {module:model/LookupSubjectBody} body 
      * @param {module:api/PermissionApi~permissionsLookupSubjectCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/PermissionLookupSubjectResponse}
      */
@@ -291,7 +292,7 @@ export default class PermissionApi {
     /**
      * subject permission
      * @param {String} tenantId Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
-     * @param {module:model/PermissionsSubjectPermissionRequest} body 
+     * @param {module:model/SubjectPermissionBody} body 
      * @param {module:api/PermissionApi~permissionsSubjectPermissionCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/PermissionSubjectPermissionResponse}
      */

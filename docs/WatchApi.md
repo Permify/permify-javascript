@@ -21,7 +21,7 @@ import PermifyApi from 'permify_api';
 
 let apiInstance = new PermifyApi.WatchApi();
 let tenantId = "tenantId_example"; // String | Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
-let body = new PermifyApi.WatchWatchRequest(); // WatchWatchRequest | 
+let body = new PermifyApi.WatchBody(); // WatchBody | 
 apiInstance.watchWatch(tenantId, body, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -37,7 +37,7 @@ apiInstance.watchWatch(tenantId, body, (error, data, response) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **String**| Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant &lt;code&gt;t1&lt;/code&gt; for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes. | 
- **body** | [**WatchWatchRequest**](WatchWatchRequest.md)|  | 
+ **body** | [**WatchBody**](WatchBody.md)|  | 
 
 ### Return type
 

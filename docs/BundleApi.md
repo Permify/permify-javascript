@@ -23,7 +23,7 @@ import PermifyApi from 'permify_api';
 
 let apiInstance = new PermifyApi.BundleApi();
 let tenantId = "tenantId_example"; // String | Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
-let body = new PermifyApi.BundleDeleteRequest(); // BundleDeleteRequest | 
+let body = new PermifyApi.BundleDeleteBody(); // BundleDeleteBody | 
 apiInstance.bundleDelete(tenantId, body, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -39,7 +39,7 @@ apiInstance.bundleDelete(tenantId, body, (error, data, response) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **String**| Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant &lt;code&gt;t1&lt;/code&gt; for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes. | 
- **body** | [**BundleDeleteRequest**](BundleDeleteRequest.md)|  | 
+ **body** | [**BundleDeleteBody**](BundleDeleteBody.md)|  | 
 
 ### Return type
 
@@ -68,7 +68,7 @@ import PermifyApi from 'permify_api';
 
 let apiInstance = new PermifyApi.BundleApi();
 let tenantId = "tenantId_example"; // String | Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
-let body = new PermifyApi.BundleReadRequest(); // BundleReadRequest | 
+let body = new PermifyApi.BundleReadBody(); // BundleReadBody | 
 apiInstance.bundleRead(tenantId, body, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -84,7 +84,7 @@ apiInstance.bundleRead(tenantId, body, (error, data, response) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **String**| Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant &lt;code&gt;t1&lt;/code&gt; for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes. | 
- **body** | [**BundleReadRequest**](BundleReadRequest.md)|  | 
+ **body** | [**BundleReadBody**](BundleReadBody.md)|  | 
 
 ### Return type
 
@@ -113,7 +113,7 @@ import PermifyApi from 'permify_api';
 
 let apiInstance = new PermifyApi.BundleApi();
 let tenantId = "tenantId_example"; // String | Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
-let body = new PermifyApi.BundleWriteRequest(); // BundleWriteRequest | 
+let body = new PermifyApi.BundleWriteBody(); // BundleWriteBody | 
 apiInstance.bundleWrite(tenantId, body, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -129,7 +129,7 @@ apiInstance.bundleWrite(tenantId, body, (error, data, response) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **String**| Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant &lt;code&gt;t1&lt;/code&gt; for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes. | 
- **body** | [**BundleWriteRequest**](BundleWriteRequest.md)|  | 
+ **body** | [**BundleWriteBody**](BundleWriteBody.md)|  | 
 
 ### Return type
 

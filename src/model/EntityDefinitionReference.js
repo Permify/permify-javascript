@@ -20,13 +20,6 @@ import ApiClient from '../ApiClient';
 export default class EntityDefinitionReference {
     
         /**
-         * value: "REFERENCE_UNSPECIFIED"
-         * @const
-         */
-        "UNSPECIFIED" = "REFERENCE_UNSPECIFIED";
-
-    
-        /**
          * value: "REFERENCE_RELATION"
          * @const
          */

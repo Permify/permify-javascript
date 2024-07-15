@@ -20,13 +20,6 @@ import ApiClient from '../ApiClient';
 export default class WellKnownType {
     
         /**
-         * value: "WELL_KNOWN_TYPE_UNSPECIFIED"
-         * @const
-         */
-        "WELL_KNOWN_TYPE_UNSPECIFIED" = "WELL_KNOWN_TYPE_UNSPECIFIED";
-
-    
-        /**
          * value: "ANY"
          * @const
          */

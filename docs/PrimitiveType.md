@@ -3,8 +3,6 @@
 ## Enum
 
 
-* `PRIMITIVE_TYPE_UNSPECIFIED` (value: `"PRIMITIVE_TYPE_UNSPECIFIED"`)
-
 * `BOOL` (value: `"BOOL"`)
 
 * `INT64` (value: `"INT64"`)

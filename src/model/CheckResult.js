@@ -20,13 +20,6 @@ import ApiClient from '../ApiClient';
 export default class CheckResult {
     
         /**
-         * value: "CHECK_RESULT_UNSPECIFIED"
-         * @const
-         */
-        "UNSPECIFIED" = "CHECK_RESULT_UNSPECIFIED";
-
-    
-        /**
          * value: "CHECK_RESULT_ALLOWED"
          * @const
          */

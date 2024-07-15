@@ -20,13 +20,6 @@ import ApiClient from '../ApiClient';
 export default class PrimitiveType {
     
         /**
-         * value: "PRIMITIVE_TYPE_UNSPECIFIED"
-         * @const
-         */
-        "PRIMITIVE_TYPE_UNSPECIFIED" = "PRIMITIVE_TYPE_UNSPECIFIED";
-
-    
-        /**
          * value: "BOOL"
          * @const
          */

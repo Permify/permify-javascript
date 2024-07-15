@@ -12,7 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
-import Expand from './Expand';
+import V1Expand from './V1Expand';
 
 /**
  * The PermissionExpandResponse model module.
@@ -50,7 +50,7 @@ class PermissionExpandResponse {
             obj = obj || new PermissionExpandResponse();
 
             if (data.hasOwnProperty('tree')) {
-                obj['tree'] = Expand.constructFromObject(data['tree']);
+                obj['tree'] = V1Expand.constructFromObject(data['tree']);
             }
         }
         return obj;
@@ -64,7 +64,7 @@ class PermissionExpandResponse {
     static validateJSON(data) {
         // validate the optional field `tree`
         if (data['tree']) { // data not null
-          Expand.validateJSON(data['tree']);
+          V1Expand.validateJSON(data['tree']);
         }
 
         return true;
@@ -76,7 +76,7 @@ class PermissionExpandResponse {
 
 
 /**
- * @member {module:model/Expand} tree
+ * @member {module:model/V1Expand} tree
  */
 PermissionExpandResponse.prototype['tree'] = undefined;
 

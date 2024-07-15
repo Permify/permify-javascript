@@ -13,11 +13,11 @@
 
 
 import ApiClient from "../ApiClient";
-import BundleDeleteRequest from '../model/BundleDeleteRequest';
+import BundleDeleteBody from '../model/BundleDeleteBody';
 import BundleDeleteResponse from '../model/BundleDeleteResponse';
-import BundleReadRequest from '../model/BundleReadRequest';
+import BundleReadBody from '../model/BundleReadBody';
 import BundleReadResponse from '../model/BundleReadResponse';
-import BundleWriteRequest from '../model/BundleWriteRequest';
+import BundleWriteBody from '../model/BundleWriteBody';
 import BundleWriteResponse from '../model/BundleWriteResponse';
 import Status from '../model/Status';
 
@@ -51,7 +51,7 @@ export default class BundleApi {
     /**
      * delete bundle
      * @param {String} tenantId Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
-     * @param {module:model/BundleDeleteRequest} body 
+     * @param {module:model/BundleDeleteBody} body 
      * @param {module:api/BundleApi~bundleDeleteCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/BundleDeleteResponse}
      */
@@ -98,7 +98,7 @@ export default class BundleApi {
     /**
      * read bundle
      * @param {String} tenantId Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
-     * @param {module:model/BundleReadRequest} body 
+     * @param {module:model/BundleReadBody} body 
      * @param {module:api/BundleApi~bundleReadCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/BundleReadResponse}
      */
@@ -145,7 +145,7 @@ export default class BundleApi {
     /**
      * write bundle
      * @param {String} tenantId Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
-     * @param {module:model/BundleWriteRequest} body 
+     * @param {module:model/BundleWriteBody} body 
      * @param {module:api/BundleApi~bundleWriteCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/BundleWriteResponse}
      */
