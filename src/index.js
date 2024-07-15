@@ -140,12 +140,12 @@ import Values from './model/Values';
 import WatchResponse from './model/WatchResponse';
 import WatchWatchRequest from './model/WatchWatchRequest';
 import WellKnownType from './model/WellKnownType';
-import BundleApi from './permify/BundleApi';
-import DataApi from './permify/DataApi';
-import PermissionApi from './permify/PermissionApi';
-import SchemaApi from './permify/SchemaApi';
-import TenancyApi from './permify/TenancyApi';
-import WatchApi from './permify/WatchApi';
+import BundleApi from './api/BundleApi';
+import DataApi from './api/DataApi';
+import PermissionApi from './api/PermissionApi';
+import SchemaApi from './api/SchemaApi';
+import TenancyApi from './api/TenancyApi';
+import WatchApi from './api/WatchApi';
 
 
 /**
@@ -950,37 +950,37 @@ export {
 
     /**
     * The BundleApi service constructor.
-    * @property {module:permify/BundleApi}
+    * @property {module:api/BundleApi}
     */
     BundleApi,
 
     /**
     * The DataApi service constructor.
-    * @property {module:permify/DataApi}
+    * @property {module:api/DataApi}
     */
     DataApi,
 
     /**
     * The PermissionApi service constructor.
-    * @property {module:permify/PermissionApi}
+    * @property {module:api/PermissionApi}
     */
     PermissionApi,
 
     /**
     * The SchemaApi service constructor.
-    * @property {module:permify/SchemaApi}
+    * @property {module:api/SchemaApi}
     */
     SchemaApi,
 
     /**
     * The TenancyApi service constructor.
-    * @property {module:permify/TenancyApi}
+    * @property {module:api/TenancyApi}
     */
     TenancyApi,
 
     /**
     * The WatchApi service constructor.
-    * @property {module:permify/WatchApi}
+    * @property {module:api/WatchApi}
     */
     WatchApi
 };
