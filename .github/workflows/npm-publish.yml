@@ -7,7 +7,6 @@ on:
 
 jobs:
   update-package-json:
-    needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -34,6 +33,7 @@ jobs:
           echo "Name and version from package.json:"
           cat package.json | jq '.name, .version'
   build:
+    needs: update-package-json
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -48,7 +48,7 @@ jobs:
           fi
       - run: npm test
   publish-npm:
-    needs: update-package-json
+    needs: buid
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
