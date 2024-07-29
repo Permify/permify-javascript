@@ -1,6 +1,6 @@
 {
-  "name": "permify_api",
-  "version": "v0.9.9",
+  "name": "permify-javascript",
+  "version": "v0.11.0",
   "description": "Permify is an open source authorization service for creating fine-grained and scalable authorization systems.",
   "license": "Apache-2.0 license",
   "main": "dist/index.js",
@@ -13,11 +13,11 @@
     "fs": false
   },
   "dependencies": {
-    "@babel/cli": "^7.0.0",
     "superagent": "^5.3.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0",
+    "@babel/cli": "^7.24.8",
+    "@babel/core": "^7.24.9",
     "@babel/plugin-proposal-class-properties": "^7.0.0",
     "@babel/plugin-proposal-decorators": "^7.0.0",
     "@babel/plugin-proposal-do-expressions": "^7.0.0",
