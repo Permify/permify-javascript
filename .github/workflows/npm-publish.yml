@@ -16,30 +16,27 @@ jobs:
       - run: |
           node -e "
           const fs = require('fs');
+          const { execSync } = require('child_process');
           const path = './package.json';
           const pkg = require(path);
-          const [owner, repo] = process.env.GITHUB_REPOSITORY.split('/');
+          const repo = process.env.GITHUB_REPOSITORY.split('/')[1];
           pkg.name = repo;
-          const versionParts = pkg.version.split('.');
-          versionParts[2] = (parseInt(versionParts[2]) + 1).toString();
-          pkg.version = versionParts.join('.');
+          try {
+            const latestVersion = execSync('npm view ' + repo + ' version').toString().trim();
+            const versionParts = latestVersion.split('.');
+            versionParts[2] = (parseInt(versionParts[2]) + 1).toString();
+            pkg.version = versionParts.join('.');
+          } catch (error) {
+            console.error('Error fetching latest version:', error);
+            pkg.version = '1.0.0';
+          }
           fs.writeFileSync(path, JSON.stringify(pkg, null, 2));
           console.log('Updated name:', pkg.name);
           console.log('Updated version:', pkg.version);
           "
-        env:
-          GITHUB_REPOSITORY: ${{ github.repository }}
       - run: |
           echo "Name and version from package.json:"
           cat package.json | jq '.name, .version'
-  build:
-    needs: update-package-json
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16
       - run: |
           if [ -f package-lock.json ]; then
             npm ci
@@ -47,15 +44,6 @@ jobs:
             npm install
           fi
       - run: npm test
-  publish-npm:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16
-          registry-url: https://registry.npmjs.org/
       - run: |
           if [ -f package-lock.json ]; then
             npm ci
