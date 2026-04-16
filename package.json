@@ -1,8 +1,8 @@
 {
   "name": "permify-javascript",
-  "version": "v0.11.0",
+  "version": "0.11.0",
   "description": "Permify is an open source authorization service for creating fine-grained and scalable authorization systems.",
-  "license": "Apache-2.0 license",
+  "license": "Apache-2.0",
   "main": "dist/index.js",
   "scripts": {
     "build": "babel src -d dist",
