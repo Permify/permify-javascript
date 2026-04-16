@@ -1,12 +1,12 @@
-# PermifyApi.EntityDefinitionReference
+# PermifyClient.EntityDefinitionReference
 
 ## Enum
 
 
-* `RELATION` (value: `"REFERENCE_RELATION"`)
+* `REFERENCE_RELATION` (value: `"REFERENCE_RELATION"`)
 
-* `PERMISSION` (value: `"REFERENCE_PERMISSION"`)
+* `REFERENCE_PERMISSION` (value: `"REFERENCE_PERMISSION"`)
 
-* `ATTRIBUTE` (value: `"REFERENCE_ATTRIBUTE"`)
+* `REFERENCE_ATTRIBUTE` (value: `"REFERENCE_ATTRIBUTE"`)
 
 

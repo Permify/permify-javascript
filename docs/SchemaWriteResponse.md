@@ -1,4 +1,4 @@
-# PermifyApi.SchemaWriteResponse
+# PermifyClient.SchemaWriteResponse
 
 ## Properties
 

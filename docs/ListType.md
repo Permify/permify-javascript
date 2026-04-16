@@ -1,4 +1,4 @@
-# PermifyApi.ListType
+# PermifyClient.ListType
 
 ## Properties
 

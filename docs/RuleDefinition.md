@@ -1,4 +1,4 @@
-# PermifyApi.RuleDefinition
+# PermifyClient.RuleDefinition
 
 ## Properties
 

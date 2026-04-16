@@ -1,4 +1,4 @@
-# PermifyApi.FunctionType
+# PermifyClient.FunctionType
 
 ## Properties
 

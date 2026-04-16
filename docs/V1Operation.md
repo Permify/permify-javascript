@@ -1,4 +1,4 @@
-# PermifyApi.V1Operation
+# PermifyClient.V1Operation
 
 ## Properties
 

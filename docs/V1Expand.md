@@ -1,4 +1,4 @@
-# PermifyApi.V1Expand
+# PermifyClient.V1Expand
 
 ## Properties
 

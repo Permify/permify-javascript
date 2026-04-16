@@ -1,4 +1,4 @@
-# PermifyApi.StreamResultOfWatchResponse
+# PermifyClient.StreamResultOfWatchResponse
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# PermifyApi.ReadAttributesBody
+# PermifyClient.ReadAttributesBody
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# PermifyApi.EntityFilter
+# PermifyClient.EntityFilter
 
 ## Properties
 

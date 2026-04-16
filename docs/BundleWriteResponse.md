@@ -1,4 +1,4 @@
-# PermifyApi.BundleWriteResponse
+# PermifyClient.BundleWriteResponse
 
 ## Properties
 

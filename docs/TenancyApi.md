@@ -1,4 +1,4 @@
-# PermifyApi.TenancyApi
+# PermifyClient.TenancyApi
 
 All URIs are relative to *http://localhost*
 
@@ -19,17 +19,16 @@ create tenant
 ### Example
 
 ```javascript
-import PermifyApi from 'permify_api';
+import PermifyClient from 'permify-javascript';
 
-let apiInstance = new PermifyApi.TenancyApi();
-let body = new PermifyApi.TenantCreateRequest(); // TenantCreateRequest | TenantCreateRequest is the message used for the request to create a tenant.
-apiInstance.tenantsCreate(body, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+let apiInstance = new PermifyClient.TenancyApi();
+let body = new PermifyClient.TenantCreateRequest(); // TenantCreateRequest | TenantCreateRequest is the message used for the request to create a tenant.
+apiInstance.tenantsCreate(body).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -62,17 +61,16 @@ delete tenant
 ### Example
 
 ```javascript
-import PermifyApi from 'permify_api';
+import PermifyClient from 'permify-javascript';
 
-let apiInstance = new PermifyApi.TenancyApi();
+let apiInstance = new PermifyClient.TenancyApi();
 let id = "id_example"; // String | id is the unique identifier of the tenant to be deleted.
-apiInstance.tenantsDelete(id, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+apiInstance.tenantsDelete(id).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -105,17 +103,16 @@ list tenants
 ### Example
 
 ```javascript
-import PermifyApi from 'permify_api';
+import PermifyClient from 'permify-javascript';
 
-let apiInstance = new PermifyApi.TenancyApi();
-let body = new PermifyApi.TenantListRequest(); // TenantListRequest | TenantListRequest is the message used for the request to list all tenants.
-apiInstance.tenantsList(body, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+let apiInstance = new PermifyClient.TenancyApi();
+let body = new PermifyClient.TenantListRequest(); // TenantListRequest | TenantListRequest is the message used for the request to list all tenants.
+apiInstance.tenantsList(body).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters

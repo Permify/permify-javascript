@@ -1,4 +1,4 @@
-# PermifyApi.SchemaWriteBody
+# PermifyClient.SchemaWriteBody
 
 ## Properties
 

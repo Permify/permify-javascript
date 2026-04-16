@@ -1,4 +1,4 @@
-# PermifyApi.V1alpha1Reference
+# PermifyClient.V1alpha1Reference
 
 ## Properties
 

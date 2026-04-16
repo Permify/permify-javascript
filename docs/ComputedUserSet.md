@@ -1,4 +1,4 @@
-# PermifyApi.ComputedUserSet
+# PermifyClient.ComputedUserSet
 
 ## Properties
 

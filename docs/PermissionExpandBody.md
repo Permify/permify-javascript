@@ -1,4 +1,4 @@
-# PermifyApi.PermissionExpandBody
+# PermifyClient.PermissionExpandBody
 
 ## Properties
 

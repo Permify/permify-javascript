@@ -1,4 +1,4 @@
-# PermifyApi.SchemaReadRequestMetadata
+# PermifyClient.SchemaReadRequestMetadata
 
 ## Properties
 

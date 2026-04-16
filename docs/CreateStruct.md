@@ -1,4 +1,4 @@
-# PermifyApi.CreateStruct
+# PermifyClient.CreateStruct
 
 ## Properties
 

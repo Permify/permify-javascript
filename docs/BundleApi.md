@@ -1,4 +1,4 @@
-# PermifyApi.BundleApi
+# PermifyClient.BundleApi
 
 All URIs are relative to *http://localhost*
 
@@ -19,18 +19,17 @@ delete bundle
 ### Example
 
 ```javascript
-import PermifyApi from 'permify_api';
+import PermifyClient from 'permify-javascript';
 
-let apiInstance = new PermifyApi.BundleApi();
+let apiInstance = new PermifyClient.BundleApi();
 let tenantId = "tenantId_example"; // String | Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
-let body = new PermifyApi.BundleDeleteBody(); // BundleDeleteBody | 
-apiInstance.bundleDelete(tenantId, body, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+let body = new PermifyClient.BundleDeleteBody(); // BundleDeleteBody | 
+apiInstance.bundleDelete(tenantId, body).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -64,18 +63,17 @@ read bundle
 ### Example
 
 ```javascript
-import PermifyApi from 'permify_api';
+import PermifyClient from 'permify-javascript';
 
-let apiInstance = new PermifyApi.BundleApi();
+let apiInstance = new PermifyClient.BundleApi();
 let tenantId = "tenantId_example"; // String | Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
-let body = new PermifyApi.BundleReadBody(); // BundleReadBody | 
-apiInstance.bundleRead(tenantId, body, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+let body = new PermifyClient.BundleReadBody(); // BundleReadBody | 
+apiInstance.bundleRead(tenantId, body).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -109,18 +107,17 @@ write bundle
 ### Example
 
 ```javascript
-import PermifyApi from 'permify_api';
+import PermifyClient from 'permify-javascript';
 
-let apiInstance = new PermifyApi.BundleApi();
+let apiInstance = new PermifyClient.BundleApi();
 let tenantId = "tenantId_example"; // String | Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
-let body = new PermifyApi.BundleWriteBody(); // BundleWriteBody | 
-apiInstance.bundleWrite(tenantId, body, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+let body = new PermifyClient.BundleWriteBody(); // BundleWriteBody | 
+apiInstance.bundleWrite(tenantId, body).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters

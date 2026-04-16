@@ -1,4 +1,4 @@
-# PermifyApi.ComputedAttribute
+# PermifyClient.ComputedAttribute
 
 ## Properties
 

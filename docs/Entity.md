@@ -1,4 +1,4 @@
-# PermifyApi.Entity
+# PermifyClient.Entity
 
 ## Properties
 

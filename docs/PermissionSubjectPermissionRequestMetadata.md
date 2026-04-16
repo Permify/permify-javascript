@@ -1,4 +1,4 @@
-# PermifyApi.PermissionSubjectPermissionRequestMetadata
+# PermifyClient.PermissionSubjectPermissionRequestMetadata
 
 ## Properties
 
