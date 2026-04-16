@@ -1,4 +1,4 @@
-# PermifyApi.DataBundle
+# PermifyClient.DataBundle
 
 ## Properties
 

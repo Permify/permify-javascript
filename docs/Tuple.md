@@ -1,4 +1,4 @@
-# PermifyApi.Tuple
+# PermifyClient.Tuple
 
 ## Properties
 

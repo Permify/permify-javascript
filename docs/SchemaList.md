@@ -1,4 +1,4 @@
-# PermifyApi.SchemaList
+# PermifyClient.SchemaList
 
 ## Properties
 

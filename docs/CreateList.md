@@ -1,4 +1,4 @@
-# PermifyApi.CreateList
+# PermifyClient.CreateList
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# PermifyApi.PrimitiveType
+# PermifyClient.PrimitiveType
 
 ## Enum
 

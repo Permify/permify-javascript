@@ -1,4 +1,4 @@
-# PermifyApi.CheckedExpr
+# PermifyClient.CheckedExpr
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# PermifyApi.ExpandTreeNode
+# PermifyClient.ExpandTreeNode
 
 ## Properties
 

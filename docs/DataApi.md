@@ -1,4 +1,4 @@
-# PermifyApi.DataApi
+# PermifyClient.DataApi
 
 All URIs are relative to *http://localhost*
 
@@ -23,18 +23,17 @@ run bundle
 ### Example
 
 ```javascript
-import PermifyApi from 'permify_api';
+import PermifyClient from 'permify-javascript';
 
-let apiInstance = new PermifyApi.DataApi();
+let apiInstance = new PermifyClient.DataApi();
 let tenantId = "tenantId_example"; // String | Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
-let body = new PermifyApi.RunBundleBody(); // RunBundleBody | 
-apiInstance.bundleRun(tenantId, body, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+let body = new PermifyClient.RunBundleBody(); // RunBundleBody | 
+apiInstance.bundleRun(tenantId, body).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -68,18 +67,17 @@ read attributes
 ### Example
 
 ```javascript
-import PermifyApi from 'permify_api';
+import PermifyClient from 'permify-javascript';
 
-let apiInstance = new PermifyApi.DataApi();
+let apiInstance = new PermifyClient.DataApi();
 let tenantId = "tenantId_example"; // String | Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
-let body = new PermifyApi.ReadAttributesBody(); // ReadAttributesBody | 
-apiInstance.dataAttributesRead(tenantId, body, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+let body = new PermifyClient.ReadAttributesBody(); // ReadAttributesBody | 
+apiInstance.dataAttributesRead(tenantId, body).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -113,18 +111,17 @@ delete data
 ### Example
 
 ```javascript
-import PermifyApi from 'permify_api';
+import PermifyClient from 'permify-javascript';
 
-let apiInstance = new PermifyApi.DataApi();
+let apiInstance = new PermifyClient.DataApi();
 let tenantId = "tenantId_example"; // String | Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
-let body = new PermifyApi.DataDeleteBody(); // DataDeleteBody | 
-apiInstance.dataDelete(tenantId, body, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+let body = new PermifyClient.DataDeleteBody(); // DataDeleteBody | 
+apiInstance.dataDelete(tenantId, body).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -158,18 +155,17 @@ read relationships
 ### Example
 
 ```javascript
-import PermifyApi from 'permify_api';
+import PermifyClient from 'permify-javascript';
 
-let apiInstance = new PermifyApi.DataApi();
+let apiInstance = new PermifyClient.DataApi();
 let tenantId = "tenantId_example"; // String | Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
-let body = new PermifyApi.ReadRelationshipsBody(); // ReadRelationshipsBody | 
-apiInstance.dataRelationshipsRead(tenantId, body, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+let body = new PermifyClient.ReadRelationshipsBody(); // ReadRelationshipsBody | 
+apiInstance.dataRelationshipsRead(tenantId, body).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -203,18 +199,17 @@ write data
 ### Example
 
 ```javascript
-import PermifyApi from 'permify_api';
+import PermifyClient from 'permify-javascript';
 
-let apiInstance = new PermifyApi.DataApi();
+let apiInstance = new PermifyClient.DataApi();
 let tenantId = "tenantId_example"; // String | Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
-let body = new PermifyApi.DataWriteBody(); // DataWriteBody | 
-apiInstance.dataWrite(tenantId, body, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+let body = new PermifyClient.DataWriteBody(); // DataWriteBody | 
+apiInstance.dataWrite(tenantId, body).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -248,18 +243,17 @@ delete relationships
 ### Example
 
 ```javascript
-import PermifyApi from 'permify_api';
+import PermifyClient from 'permify-javascript';
 
-let apiInstance = new PermifyApi.DataApi();
+let apiInstance = new PermifyClient.DataApi();
 let tenantId = "tenantId_example"; // String | Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
-let body = new PermifyApi.DeleteRelationshipsBody(); // DeleteRelationshipsBody | 
-apiInstance.relationshipsDelete(tenantId, body, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+let body = new PermifyClient.DeleteRelationshipsBody(); // DeleteRelationshipsBody | 
+apiInstance.relationshipsDelete(tenantId, body).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -293,18 +287,17 @@ write relationships
 ### Example
 
 ```javascript
-import PermifyApi from 'permify_api';
+import PermifyClient from 'permify-javascript';
 
-let apiInstance = new PermifyApi.DataApi();
+let apiInstance = new PermifyClient.DataApi();
 let tenantId = "tenantId_example"; // String | Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
-let body = new PermifyApi.WriteRelationshipsBody(); // WriteRelationshipsBody | 
-apiInstance.relationshipsWrite(tenantId, body, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+let body = new PermifyClient.WriteRelationshipsBody(); // WriteRelationshipsBody | 
+apiInstance.relationshipsWrite(tenantId, body).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters

@@ -1,4 +1,4 @@
-# PermifyApi.ExpandLeaf
+# PermifyClient.ExpandLeaf
 
 ## Properties
 

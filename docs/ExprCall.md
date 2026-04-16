@@ -1,4 +1,4 @@
-# PermifyApi.ExprCall
+# PermifyClient.ExprCall
 
 ## Properties
 

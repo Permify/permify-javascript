@@ -1,10 +1,10 @@
-# PermifyApi.CheckResult
+# PermifyClient.CheckResult
 
 ## Enum
 
 
-* `ALLOWED` (value: `"CHECK_RESULT_ALLOWED"`)
+* `CHECK_RESULT_ALLOWED` (value: `"CHECK_RESULT_ALLOWED"`)
 
-* `DENIED` (value: `"CHECK_RESULT_DENIED"`)
+* `CHECK_RESULT_DENIED` (value: `"CHECK_RESULT_DENIED"`)
 
 

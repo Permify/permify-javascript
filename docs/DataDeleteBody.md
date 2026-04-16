@@ -1,4 +1,4 @@
-# PermifyApi.DataDeleteBody
+# PermifyClient.DataDeleteBody
 
 ## Properties
 

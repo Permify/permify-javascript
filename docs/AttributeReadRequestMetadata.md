@@ -1,4 +1,4 @@
-# PermifyApi.AttributeReadRequestMetadata
+# PermifyClient.AttributeReadRequestMetadata
 
 ## Properties
 

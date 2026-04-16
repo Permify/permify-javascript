@@ -1,4 +1,4 @@
-# PermifyApi.BundleDeleteResponse
+# PermifyClient.BundleDeleteResponse
 
 ## Properties
 

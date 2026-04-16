@@ -1,4 +1,4 @@
-# PermifyApi.CheckBody
+# PermifyClient.CheckBody
 
 ## Properties
 

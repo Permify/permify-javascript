@@ -1,4 +1,4 @@
-# PermifyApi.RelationshipDeleteResponse
+# PermifyClient.RelationshipDeleteResponse
 
 ## Properties
 

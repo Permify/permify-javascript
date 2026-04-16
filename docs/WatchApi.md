@@ -1,4 +1,4 @@
-# PermifyApi.WatchApi
+# PermifyClient.WatchApi
 
 All URIs are relative to *http://localhost*
 
@@ -17,18 +17,17 @@ watch changes
 ### Example
 
 ```javascript
-import PermifyApi from 'permify_api';
+import PermifyClient from 'permify-javascript';
 
-let apiInstance = new PermifyApi.WatchApi();
+let apiInstance = new PermifyClient.WatchApi();
 let tenantId = "tenantId_example"; // String | Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
-let body = new PermifyApi.WatchBody(); // WatchBody | 
-apiInstance.watchWatch(tenantId, body, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+let body = new PermifyClient.WatchBody(); // WatchBody | 
+apiInstance.watchWatch(tenantId, body).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters

@@ -1,4 +1,4 @@
-# PermifyApi.Any
+# PermifyClient.Any
 
 ## Properties
 

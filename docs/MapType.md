@@ -1,4 +1,4 @@
-# PermifyApi.MapType
+# PermifyClient.MapType
 
 ## Properties
 

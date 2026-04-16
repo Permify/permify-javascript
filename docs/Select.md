@@ -1,4 +1,4 @@
-# PermifyApi.Select
+# PermifyClient.Select
 
 ## Properties
 

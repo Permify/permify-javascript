@@ -1,4 +1,4 @@
-# PermifyApi.StreamResultOfPermissionLookupEntityStreamResponse
+# PermifyClient.StreamResultOfPermissionLookupEntityStreamResponse
 
 ## Properties
 

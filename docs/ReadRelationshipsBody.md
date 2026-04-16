@@ -1,4 +1,4 @@
-# PermifyApi.ReadRelationshipsBody
+# PermifyClient.ReadRelationshipsBody
 
 ## Properties
 

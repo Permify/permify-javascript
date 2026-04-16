@@ -1,4 +1,4 @@
-# PermifyApi.Tenant
+# PermifyClient.Tenant
 
 ## Properties
 

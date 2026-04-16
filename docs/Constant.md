@@ -1,4 +1,4 @@
-# PermifyApi.Constant
+# PermifyClient.Constant
 
 ## Properties
 

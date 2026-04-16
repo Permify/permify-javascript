@@ -1,4 +1,4 @@
-# PermifyApi.SubjectPermissionBody
+# PermifyClient.SubjectPermissionBody
 
 ## Properties
 

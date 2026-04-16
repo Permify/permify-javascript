@@ -1,4 +1,4 @@
-# PermifyApi.PermissionLookupSubjectRequestMetadata
+# PermifyClient.PermissionLookupSubjectRequestMetadata
 
 ## Properties
 

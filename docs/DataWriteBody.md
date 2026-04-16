@@ -1,4 +1,4 @@
-# PermifyApi.DataWriteBody
+# PermifyClient.DataWriteBody
 
 ## Properties
 

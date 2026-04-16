@@ -1,9 +1,9 @@
-# PermifyApi.TenantDeleteResponse
+# PermifyClient.TenantDeleteResponse
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**tenant** | [**Tenant**](Tenant.md) |  | [optional] 
+**tenantId** | **String** | tenant_id is the tenant id that was deleted. | [optional] 
 
 

@@ -1,4 +1,4 @@
-# PermifyApi.DataWriteRequestMetadata
+# PermifyClient.DataWriteRequestMetadata
 
 ## Properties
 

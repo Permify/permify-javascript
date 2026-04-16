@@ -1,4 +1,4 @@
-# PermifyApi.SchemaPartialWriteRequestMetadata
+# PermifyClient.SchemaPartialWriteRequestMetadata
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# PermifyApi.PartialWriteBody
+# PermifyClient.PartialWriteBody
 
 ## Properties
 

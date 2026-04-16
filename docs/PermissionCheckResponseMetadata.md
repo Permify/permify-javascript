@@ -1,4 +1,4 @@
-# PermifyApi.PermissionCheckResponseMetadata
+# PermifyClient.PermissionCheckResponseMetadata
 
 ## Properties
 

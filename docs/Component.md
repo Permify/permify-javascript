@@ -1,0 +1,12 @@
+# PermifyClient.Component
+
+## Enum
+
+
+* `COMPONENT_PARSER` (value: `"COMPONENT_PARSER"`)
+
+* `COMPONENT_TYPE_CHECKER` (value: `"COMPONENT_TYPE_CHECKER"`)
+
+* `COMPONENT_RUNTIME` (value: `"COMPONENT_RUNTIME"`)
+
+
