@@ -1,9 +1,10 @@
-# PermifyApi.PermissionApi
+# PermifyClient.PermissionApi
 
 All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**permissionsBulkCheck**](PermissionApi.md#permissionsBulkCheck) | **POST** /v1/tenants/{tenant_id}/permissions/bulk-check | bulk check api
 [**permissionsCheck**](PermissionApi.md#permissionsCheck) | **POST** /v1/tenants/{tenant_id}/permissions/check | check api
 [**permissionsExpand**](PermissionApi.md#permissionsExpand) | **POST** /v1/tenants/{tenant_id}/permissions/expand | expand api
 [**permissionsLookupEntity**](PermissionApi.md#permissionsLookupEntity) | **POST** /v1/tenants/{tenant_id}/permissions/lookup-entity | lookup entity
@@ -11,6 +12,52 @@ Method | HTTP request | Description
 [**permissionsLookupSubject**](PermissionApi.md#permissionsLookupSubject) | **POST** /v1/tenants/{tenant_id}/permissions/lookup-subject | lookup-subject
 [**permissionsSubjectPermission**](PermissionApi.md#permissionsSubjectPermission) | **POST** /v1/tenants/{tenant_id}/permissions/subject-permission | subject permission
 
+
+
+## permissionsBulkCheck
+
+> PermissionBulkCheckResponse permissionsBulkCheck(tenantId, body)
+
+bulk check api
+
+Check multiple permissions in a single request. Maximum 100 requests allowed.
+
+### Example
+
+```javascript
+import PermifyClient from 'permify-javascript';
+
+let apiInstance = new PermifyClient.PermissionApi();
+let tenantId = "tenantId_example"; // String | Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
+let body = new PermifyClient.BulkCheckBody(); // BulkCheckBody | 
+apiInstance.permissionsBulkCheck(tenantId, body).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **String**| Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant &lt;code&gt;t1&lt;/code&gt; for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes. | 
+ **body** | [**BulkCheckBody**](BulkCheckBody.md)|  | 
+
+### Return type
+
+[**PermissionBulkCheckResponse**](PermissionBulkCheckResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 
 ## permissionsCheck
@@ -22,18 +69,17 @@ check api
 ### Example
 
 ```javascript
-import PermifyApi from 'permify_api';
+import PermifyClient from 'permify-javascript';
 
-let apiInstance = new PermifyApi.PermissionApi();
+let apiInstance = new PermifyClient.PermissionApi();
 let tenantId = "tenantId_example"; // String | Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
-let body = new PermifyApi.CheckBody(); // CheckBody | 
-apiInstance.permissionsCheck(tenantId, body, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+let body = new PermifyClient.CheckBody(); // CheckBody | 
+apiInstance.permissionsCheck(tenantId, body).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -67,18 +113,17 @@ expand api
 ### Example
 
 ```javascript
-import PermifyApi from 'permify_api';
+import PermifyClient from 'permify-javascript';
 
-let apiInstance = new PermifyApi.PermissionApi();
+let apiInstance = new PermifyClient.PermissionApi();
 let tenantId = "tenantId_example"; // String | Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
-let body = new PermifyApi.PermissionExpandBody(); // PermissionExpandBody | 
-apiInstance.permissionsExpand(tenantId, body, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+let body = new PermifyClient.PermissionExpandBody(); // PermissionExpandBody | 
+apiInstance.permissionsExpand(tenantId, body).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -112,18 +157,17 @@ lookup entity
 ### Example
 
 ```javascript
-import PermifyApi from 'permify_api';
+import PermifyClient from 'permify-javascript';
 
-let apiInstance = new PermifyApi.PermissionApi();
+let apiInstance = new PermifyClient.PermissionApi();
 let tenantId = "tenantId_example"; // String | Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
-let body = new PermifyApi.LookupEntityBody(); // LookupEntityBody | 
-apiInstance.permissionsLookupEntity(tenantId, body, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+let body = new PermifyClient.LookupEntityBody(); // LookupEntityBody | 
+apiInstance.permissionsLookupEntity(tenantId, body).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -157,18 +201,17 @@ lookup entity stream
 ### Example
 
 ```javascript
-import PermifyApi from 'permify_api';
+import PermifyClient from 'permify-javascript';
 
-let apiInstance = new PermifyApi.PermissionApi();
+let apiInstance = new PermifyClient.PermissionApi();
 let tenantId = "tenantId_example"; // String | Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
-let body = new PermifyApi.LookupEntityStreamBody(); // LookupEntityStreamBody | 
-apiInstance.permissionsLookupEntityStream(tenantId, body, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+let body = new PermifyClient.LookupEntityStreamBody(); // LookupEntityStreamBody | 
+apiInstance.permissionsLookupEntityStream(tenantId, body).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -202,18 +245,17 @@ lookup-subject
 ### Example
 
 ```javascript
-import PermifyApi from 'permify_api';
+import PermifyClient from 'permify-javascript';
 
-let apiInstance = new PermifyApi.PermissionApi();
+let apiInstance = new PermifyClient.PermissionApi();
 let tenantId = "tenantId_example"; // String | Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
-let body = new PermifyApi.LookupSubjectBody(); // LookupSubjectBody | 
-apiInstance.permissionsLookupSubject(tenantId, body, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+let body = new PermifyClient.LookupSubjectBody(); // LookupSubjectBody | 
+apiInstance.permissionsLookupSubject(tenantId, body).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -247,18 +289,17 @@ subject permission
 ### Example
 
 ```javascript
-import PermifyApi from 'permify_api';
+import PermifyClient from 'permify-javascript';
 
-let apiInstance = new PermifyApi.PermissionApi();
+let apiInstance = new PermifyClient.PermissionApi();
 let tenantId = "tenantId_example"; // String | Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
-let body = new PermifyApi.SubjectPermissionBody(); // SubjectPermissionBody | 
-apiInstance.permissionsSubjectPermission(tenantId, body, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+let body = new PermifyClient.SubjectPermissionBody(); // SubjectPermissionBody | 
+apiInstance.permissionsSubjectPermission(tenantId, body).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters

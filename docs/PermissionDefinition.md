@@ -1,4 +1,4 @@
-# PermifyApi.PermissionDefinition
+# PermifyClient.PermissionDefinition
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# PermifyApi.Partials
+# PermifyClient.Partials
 
 ## Properties
 

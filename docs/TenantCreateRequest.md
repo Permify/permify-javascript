@@ -1,4 +1,4 @@
-# PermifyApi.TenantCreateRequest
+# PermifyClient.TenantCreateRequest
 
 ## Properties
 

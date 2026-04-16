@@ -1,4 +1,4 @@
-# PermifyApi.TenantListRequest
+# PermifyClient.TenantListRequest
 
 ## Properties
 

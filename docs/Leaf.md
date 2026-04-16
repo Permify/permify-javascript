@@ -1,4 +1,4 @@
-# PermifyApi.Leaf
+# PermifyClient.Leaf
 
 ## Properties
 

@@ -1,10 +1,10 @@
-# PermifyApi.DataChangeOperation
+# PermifyClient.DataChangeOperation
 
 ## Enum
 
 
-* `CREATE` (value: `"OPERATION_CREATE"`)
+* `OPERATION_CREATE` (value: `"OPERATION_CREATE"`)
 
-* `DELETE` (value: `"OPERATION_DELETE"`)
+* `OPERATION_DELETE` (value: `"OPERATION_DELETE"`)
 
 

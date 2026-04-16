@@ -1,4 +1,4 @@
-# PermifyApi.RelationDefinition
+# PermifyClient.RelationDefinition
 
 ## Properties
 

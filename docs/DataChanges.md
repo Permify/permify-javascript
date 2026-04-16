@@ -1,4 +1,4 @@
-# PermifyApi.DataChanges
+# PermifyClient.DataChanges
 
 ## Properties
 

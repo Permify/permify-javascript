@@ -1,4 +1,4 @@
-# PermifyApi.RelationshipReadRequestMetadata
+# PermifyClient.RelationshipReadRequestMetadata
 
 ## Properties
 

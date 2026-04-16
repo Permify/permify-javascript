@@ -1,4 +1,4 @@
-# PermifyApi.AttributeFilter
+# PermifyClient.AttributeFilter
 
 ## Properties
 

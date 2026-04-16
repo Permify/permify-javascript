@@ -1,4 +1,4 @@
-# PermifyApi.PermissionCheckResponse
+# PermifyClient.PermissionCheckResponse
 
 ## Properties
 

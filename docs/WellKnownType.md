@@ -1,4 +1,4 @@
-# PermifyApi.WellKnownType
+# PermifyClient.WellKnownType
 
 ## Enum
 

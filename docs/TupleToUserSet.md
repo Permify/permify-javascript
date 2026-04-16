@@ -1,4 +1,4 @@
-# PermifyApi.TupleToUserSet
+# PermifyClient.TupleToUserSet
 
 ## Properties
 

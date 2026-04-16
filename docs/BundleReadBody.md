@@ -1,4 +1,4 @@
-# PermifyApi.BundleReadBody
+# PermifyClient.BundleReadBody
 
 ## Properties
 

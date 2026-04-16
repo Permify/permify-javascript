@@ -1,4 +1,4 @@
-# PermifyApi.DataDeleteResponse
+# PermifyClient.DataDeleteResponse
 
 ## Properties
 

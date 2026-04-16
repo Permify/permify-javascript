@@ -1,4 +1,4 @@
-# PermifyApi.RunBundleBody
+# PermifyClient.RunBundleBody
 
 ## Properties
 

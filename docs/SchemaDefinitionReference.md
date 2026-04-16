@@ -1,10 +1,10 @@
-# PermifyApi.SchemaDefinitionReference
+# PermifyClient.SchemaDefinitionReference
 
 ## Enum
 
 
-* `ENTITY` (value: `"REFERENCE_ENTITY"`)
+* `REFERENCE_ENTITY` (value: `"REFERENCE_ENTITY"`)
 
-* `RULE` (value: `"REFERENCE_RULE"`)
+* `REFERENCE_RULE` (value: `"REFERENCE_RULE"`)
 
 

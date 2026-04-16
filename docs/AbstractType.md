@@ -1,4 +1,4 @@
-# PermifyApi.AbstractType
+# PermifyClient.AbstractType
 
 ## Properties
 

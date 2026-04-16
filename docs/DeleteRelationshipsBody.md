@@ -1,4 +1,4 @@
-# PermifyApi.DeleteRelationshipsBody
+# PermifyClient.DeleteRelationshipsBody
 
 ## Properties
 

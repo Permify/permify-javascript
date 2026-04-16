@@ -1,4 +1,4 @@
-# PermifyApi.TupleFilter
+# PermifyClient.TupleFilter
 
 ## Properties
 

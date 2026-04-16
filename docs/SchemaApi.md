@@ -1,4 +1,4 @@
-# PermifyApi.SchemaApi
+# PermifyClient.SchemaApi
 
 All URIs are relative to *http://localhost*
 
@@ -20,18 +20,17 @@ list schema
 ### Example
 
 ```javascript
-import PermifyApi from 'permify_api';
+import PermifyClient from 'permify-javascript';
 
-let apiInstance = new PermifyApi.SchemaApi();
+let apiInstance = new PermifyClient.SchemaApi();
 let tenantId = "tenantId_example"; // String | Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
-let body = new PermifyApi.SchemaListBody(); // SchemaListBody | 
-apiInstance.schemasList(tenantId, body, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+let body = new PermifyClient.SchemaListBody(); // SchemaListBody | 
+apiInstance.schemasList(tenantId, body).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -65,18 +64,17 @@ partially update your authorization model
 ### Example
 
 ```javascript
-import PermifyApi from 'permify_api';
+import PermifyClient from 'permify-javascript';
 
-let apiInstance = new PermifyApi.SchemaApi();
+let apiInstance = new PermifyClient.SchemaApi();
 let tenantId = "tenantId_example"; // String | tenant_id is a string that identifies the tenant. It must match the pattern \"[a-zA-Z0-9-,]+\", be a maximum of 64 bytes, and must not be empty.
-let body = new PermifyApi.PartialWriteBody(); // PartialWriteBody | 
-apiInstance.schemasPartialWrite(tenantId, body, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+let body = new PermifyClient.PartialWriteBody(); // PartialWriteBody | 
+apiInstance.schemasPartialWrite(tenantId, body).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -110,18 +108,17 @@ read schema
 ### Example
 
 ```javascript
-import PermifyApi from 'permify_api';
+import PermifyClient from 'permify-javascript';
 
-let apiInstance = new PermifyApi.SchemaApi();
+let apiInstance = new PermifyClient.SchemaApi();
 let tenantId = "tenantId_example"; // String | Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
-let body = new PermifyApi.SchemaReadBody(); // SchemaReadBody | 
-apiInstance.schemasRead(tenantId, body, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+let body = new PermifyClient.SchemaReadBody(); // SchemaReadBody | 
+apiInstance.schemasRead(tenantId, body).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -155,18 +152,17 @@ write schema
 ### Example
 
 ```javascript
-import PermifyApi from 'permify_api';
+import PermifyClient from 'permify-javascript';
 
-let apiInstance = new PermifyApi.SchemaApi();
+let apiInstance = new PermifyClient.SchemaApi();
 let tenantId = "tenantId_example"; // String | Identifier of the tenant, if you are not using multi-tenancy (have only one tenant) use pre-inserted tenant <code>t1</code> for this field. Required, and must match the pattern \\“[a-zA-Z0-9-,]+\\“, max 64 bytes.
-let body = new PermifyApi.SchemaWriteBody(); // SchemaWriteBody | 
-apiInstance.schemasWrite(tenantId, body, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+let body = new PermifyClient.SchemaWriteBody(); // SchemaWriteBody | 
+apiInstance.schemasWrite(tenantId, body).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters

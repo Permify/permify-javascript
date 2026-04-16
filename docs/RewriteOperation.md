@@ -1,12 +1,12 @@
-# PermifyApi.RewriteOperation
+# PermifyClient.RewriteOperation
 
 ## Enum
 
 
-* `UNION` (value: `"OPERATION_UNION"`)
+* `OPERATION_UNION` (value: `"OPERATION_UNION"`)
 
-* `INTERSECTION` (value: `"OPERATION_INTERSECTION"`)
+* `OPERATION_INTERSECTION` (value: `"OPERATION_INTERSECTION"`)
 
-* `EXCLUSION` (value: `"OPERATION_EXCLUSION"`)
+* `OPERATION_EXCLUSION` (value: `"OPERATION_EXCLUSION"`)
 
 

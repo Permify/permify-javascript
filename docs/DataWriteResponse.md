@@ -1,4 +1,4 @@
-# PermifyApi.DataWriteResponse
+# PermifyClient.DataWriteResponse
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# PermifyApi.Child
+# PermifyClient.Child
 
 ## Properties
 
