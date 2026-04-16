@@ -22,13 +22,7 @@ java -jar "${SCRIPT_DIR}/openapi-generator-cli.jar" generate \
   --input-spec "${OPENAPI_FILE}" \
   --generator-name javascript \
   --output "${PROJECT_ROOT}" \
-  --additional-properties \
-    moduleName=PermifyClient,\
-    projectName=permify-javascript,\
-    projectVersion="${PACKAGE_VERSION}",\
-    licenseName=Apache-2.0,\
-    usePromises=true,\
-    useES6=true \
+  --additional-properties "moduleName=PermifyClient,projectName=permify-javascript,projectVersion=${PACKAGE_VERSION},licenseName=Apache-2.0,usePromises=true,useES6=true" \
   --global-property modelDocs=true,apiDocs=true \
   --skip-validate-spec
 
