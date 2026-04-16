@@ -1,0 +1,73 @@
+name: Update Permify JavaScript SDK
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  generate:
+    name: Generate SDK from OpenAPI
+    timeout-minutes: 15
+    runs-on: ubuntu-latest
+
+    steps:
+      # Security hardening for GitHub Actions runner
+      - name: Harden Runner
+        uses: step-security/harden-runner@df199fb7be9f65074067a9eb93f12bb4c5547cf2 # v2.13.3
+        with:
+          egress-policy: audit
+
+      # Checkout the current repository
+      - name: Checkout Repository
+        uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6.0.0
+
+      # Download the latest OpenAPI spec from the Permify repository
+      - name: Download OpenAPI Spec
+        run: |
+          curl -fsSL "https://raw.githubusercontent.com/Permify/permify/master/docs/api-reference/openapiv2/apidocs.swagger.json" \
+            -o generator/openapi.json
+
+      # Setup Java (required for openapi-generator-cli)
+      - name: Setup Java
+        uses: actions/setup-java@3a4f6e1af504cf6a31855fa899c6aa5e40ceef53 # v4.7.0
+        with:
+          distribution: temurin
+          java-version: 17
+
+      # Generate the SDK
+      - name: Generate JavaScript SDK
+        run: |
+          chmod +x generator/generate-sdk.sh
+          generator/generate-sdk.sh
+
+      # Commit changes and open PR if there are changes
+      - name: Commit changes
+        id: commitchanges
+        run: |
+          chmod +x scripts/commit-changes.sh
+          scripts/commit-changes.sh "sdk-update/permify-latest"
+        shell: bash
+
+      # Push branch and open or update the PR only if there are changes
+      - name: Push changes and open PR
+        if: steps.commitchanges.outputs.changes_made == '1'
+        env:
+          GH_TOKEN: ${{ secrets.PAT_TOKEN }}
+        run: |
+          BRANCH_NAME="${{ steps.commitchanges.outputs.branch_name }}"
+          PR_TITLE="chore(openapi): update generated SDK with latest Permify definitions"
+          PR_BODY="Automatically created PR with the latest generated SDK from Permify OpenAPI definitions."
+
+          git push --force "https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/${{ github.repository }}" "${BRANCH_NAME}"
+
+          PR_NUMBER="$(gh pr list --head "${BRANCH_NAME}" --base main --state open --json number --jq '.[0].number')"
+
+          if [ -n "${PR_NUMBER}" ]; then
+            gh pr edit "${PR_NUMBER}" --title "${PR_TITLE}" --body "${PR_BODY}"
+          else
+            gh pr create --base main --head "${BRANCH_NAME}" --title "${PR_TITLE}" --body "${PR_BODY}" --label dependencies --label automated
+          fi
+        shell: bash

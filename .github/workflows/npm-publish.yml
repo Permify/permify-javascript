@@ -1,57 +1,49 @@
-name: Js Sdk Package
+name: Publish to NPM
 
 on:
-  push:
-    branches:
-      - main
+  release:
+    types:
+      - published
+
+permissions:
+  contents: read
 
 jobs:
-  update-package-json:
+  publish:
+    name: Publish to NPM
+    timeout-minutes: 10
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v3
+      # Security hardening for GitHub Actions runner
+      - name: Harden Runner
+        uses: step-security/harden-runner@df199fb7be9f65074067a9eb93f12bb4c5547cf2 # v2.13.3
         with:
-          node-version: 16
-      - run: |
-          node -e "
-          const fs = require('fs');
-          const { execSync } = require('child_process');
-          const path = './package.json';
-          const pkg = require(path);
-          const repo = process.env.GITHUB_REPOSITORY.split('/')[1];
-          pkg.name = repo;
-          try {
-            const latestVersion = execSync('npm view ' + repo + ' version').toString().trim();
-            const versionParts = latestVersion.split('.');
-            versionParts[2] = (parseInt(versionParts[2]) + 1).toString();
-            pkg.version = versionParts.join('.');
-          } catch (error) {
-            console.error('Error fetching latest version:', error);
-            pkg.version = '1.0.0';
-          }
-          fs.writeFileSync(path, JSON.stringify(pkg, null, 2));
-          console.log('Updated name:', pkg.name);
-          console.log('Updated version:', pkg.version);
-          "
-      - run: |
-          echo "Name and version from package.json:"
-          cat package.json | jq '.name, .version'
-      - run: |
-          if [ -f package-lock.json ]; then
-            npm ci
-          else
-            npm install
-          fi
-      - run: npm test
-      - run: |
-          if [ -f package-lock.json ]; then
-            npm ci
-          else
-            npm install
-          fi
-      - run: |
-          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
-      - run: npm publish
+          egress-policy: audit
+
+      - uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6.0.0
+
+      - uses: actions/setup-node@2028fbc5c25fe9cf00d9f06a71cc4710d4507903 # v6.0.0
+        with:
+          node-version: 20
+          registry-url: "https://registry.npmjs.org"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build
+
+      - name: Write release version
+        run: |
+          VERSION=${GITHUB_REF_NAME#v}
+          echo Version: $VERSION
+          echo "VERSION=$VERSION" >> $GITHUB_ENV
+
+      - name: Set version
+        run: npm version ${VERSION} --no-git-tag-version --allow-same-version
+
+      - name: Publish to NPM
+        run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
