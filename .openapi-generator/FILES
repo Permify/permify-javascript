@@ -285,10 +285,3 @@ src/model/WatchBody.js
 src/model/WatchResponse.js
 src/model/WellKnownType.js
 src/model/WriteRelationshipsBody.js
-test/model/BulkCheckBody.spec.js
-test/model/Component.spec.js
-test/model/Extension.spec.js
-test/model/PermissionBulkCheckRequestItem.spec.js
-test/model/PermissionBulkCheckResponse.spec.js
-test/model/StringArrayValue.spec.js
-test/model/Version.spec.js
