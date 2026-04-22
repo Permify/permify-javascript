@@ -17,7 +17,7 @@ import Any from './Any';
 /**
  * The Values model module.
  * @module model/Values
- * @version 0.11.0
+ * @version 1.6.9
  */
 class Values {
     /**

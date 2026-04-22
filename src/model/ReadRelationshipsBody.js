@@ -18,7 +18,7 @@ import TupleFilter from './TupleFilter';
 /**
  * The ReadRelationshipsBody model module.
  * @module model/ReadRelationshipsBody
- * @version 0.11.0
+ * @version 1.6.9
  */
 class ReadRelationshipsBody {
     /**

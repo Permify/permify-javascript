@@ -17,7 +17,7 @@ import Constant from './Constant';
 /**
  * The V1alpha1Reference model module.
  * @module model/V1alpha1Reference
- * @version 0.11.0
+ * @version 1.6.9
  */
 class V1alpha1Reference {
     /**

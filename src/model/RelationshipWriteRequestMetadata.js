@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The RelationshipWriteRequestMetadata model module.
  * @module model/RelationshipWriteRequestMetadata
- * @version 0.11.0
+ * @version 1.6.9
  */
 class RelationshipWriteRequestMetadata {
     /**

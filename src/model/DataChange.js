@@ -19,7 +19,7 @@ import Tuple from './Tuple';
 /**
  * The DataChange model module.
  * @module model/DataChange
- * @version 0.11.0
+ * @version 1.6.9
  */
 class DataChange {
     /**

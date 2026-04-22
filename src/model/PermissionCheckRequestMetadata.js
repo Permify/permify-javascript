@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The PermissionCheckRequestMetadata model module.
  * @module model/PermissionCheckRequestMetadata
- * @version 0.11.0
+ * @version 1.6.9
  */
 class PermissionCheckRequestMetadata {
     /**

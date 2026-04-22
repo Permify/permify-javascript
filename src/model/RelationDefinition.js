@@ -17,7 +17,7 @@ import RelationReference from './RelationReference';
 /**
  * The RelationDefinition model module.
  * @module model/RelationDefinition
- * @version 0.11.0
+ * @version 1.6.9
  */
 class RelationDefinition {
     /**

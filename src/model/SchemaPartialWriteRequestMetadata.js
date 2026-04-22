@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The SchemaPartialWriteRequestMetadata model module.
  * @module model/SchemaPartialWriteRequestMetadata
- * @version 0.11.0
+ * @version 1.6.9
  */
 class SchemaPartialWriteRequestMetadata {
     /**

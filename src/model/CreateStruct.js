@@ -17,7 +17,7 @@ import Entry from './Entry';
 /**
  * The CreateStruct model module.
  * @module model/CreateStruct
- * @version 0.11.0
+ * @version 1.6.9
  */
 class CreateStruct {
     /**

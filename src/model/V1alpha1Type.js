@@ -22,7 +22,7 @@ import WellKnownType from './WellKnownType';
 /**
  * The V1alpha1Type model module.
  * @module model/V1alpha1Type
- * @version 0.11.0
+ * @version 1.6.9
  */
 class V1alpha1Type {
     /**

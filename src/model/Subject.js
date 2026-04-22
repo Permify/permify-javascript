@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The Subject model module.
  * @module model/Subject
- * @version 0.11.0
+ * @version 1.6.9
  */
 class Subject {
     /**

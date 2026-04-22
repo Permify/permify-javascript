@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The Constant model module.
  * @module model/Constant
- * @version 0.11.0
+ * @version 1.6.9
  */
 class Constant {
     /**

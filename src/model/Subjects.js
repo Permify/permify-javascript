@@ -17,7 +17,7 @@ import Subject from './Subject';
 /**
  * The Subjects model module.
  * @module model/Subjects
- * @version 0.11.0
+ * @version 1.6.9
  */
 class Subjects {
     /**

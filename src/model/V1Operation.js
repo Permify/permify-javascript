@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The V1Operation model module.
  * @module model/V1Operation
- * @version 0.11.0
+ * @version 1.6.9
  */
 class V1Operation {
     /**

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The BundleRunResponse model module.
  * @module model/BundleRunResponse
- * @version 0.11.0
+ * @version 1.6.9
  */
 class BundleRunResponse {
     /**

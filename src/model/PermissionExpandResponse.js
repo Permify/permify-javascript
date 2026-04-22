@@ -17,7 +17,7 @@ import V1Expand from './V1Expand';
 /**
  * The PermissionExpandResponse model module.
  * @module model/PermissionExpandResponse
- * @version 0.11.0
+ * @version 1.6.9
  */
 class PermissionExpandResponse {
     /**

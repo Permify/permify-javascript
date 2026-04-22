@@ -20,7 +20,7 @@ import PermissionCheckRequestMetadata from './PermissionCheckRequestMetadata';
 /**
  * The BulkCheckBody model module.
  * @module model/BulkCheckBody
- * @version 0.11.0
+ * @version 1.6.9
  */
 class BulkCheckBody {
     /**

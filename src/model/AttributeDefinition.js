@@ -17,7 +17,7 @@ import AttributeType from './AttributeType';
 /**
  * The AttributeDefinition model module.
  * @module model/AttributeDefinition
- * @version 0.11.0
+ * @version 1.6.9
  */
 class AttributeDefinition {
     /**

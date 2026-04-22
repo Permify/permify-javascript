@@ -17,7 +17,7 @@ import EntityFilter from './EntityFilter';
 /**
  * The AttributeFilter model module.
  * @module model/AttributeFilter
- * @version 0.11.0
+ * @version 1.6.9
  */
 class AttributeFilter {
     /**

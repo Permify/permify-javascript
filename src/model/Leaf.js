@@ -20,7 +20,7 @@ import V1Call from './V1Call';
 /**
  * The Leaf model module.
  * @module model/Leaf
- * @version 0.11.0
+ * @version 1.6.9
  */
 class Leaf {
     /**

@@ -23,7 +23,7 @@ import TenantListResponse from '../model/TenantListResponse';
 /**
 * Tenancy service.
 * @module api/TenancyApi
-* @version 0.11.0
+* @version 1.6.9
 */
 export default class TenancyApi {
 

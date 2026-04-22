@@ -18,7 +18,7 @@ import AttributeReadRequestMetadata from './AttributeReadRequestMetadata';
 /**
  * The ReadAttributesBody model module.
  * @module model/ReadAttributesBody
- * @version 0.11.0
+ * @version 1.6.9
  */
 class ReadAttributesBody {
     /**

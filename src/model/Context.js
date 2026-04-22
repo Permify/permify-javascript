@@ -18,7 +18,7 @@ import Tuple from './Tuple';
 /**
  * The Context model module.
  * @module model/Context
- * @version 0.11.0
+ * @version 1.6.9
  */
 class Context {
     /**

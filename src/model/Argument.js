@@ -17,7 +17,7 @@ import ComputedAttribute from './ComputedAttribute';
 /**
  * The Argument model module.
  * @module model/Argument
- * @version 0.11.0
+ * @version 1.6.9
  */
 class Argument {
     /**

@@ -18,7 +18,7 @@ import Extension from './Extension';
 /**
  * The SourceInfo model module.
  * @module model/SourceInfo
- * @version 0.11.0
+ * @version 1.6.9
  */
 class SourceInfo {
     /**

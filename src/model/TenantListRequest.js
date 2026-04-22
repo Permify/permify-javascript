@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The TenantListRequest model module.
  * @module model/TenantListRequest
- * @version 0.11.0
+ * @version 1.6.9
  */
 class TenantListRequest {
     /**

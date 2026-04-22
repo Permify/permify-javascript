@@ -17,7 +17,7 @@ import SchemaDefinition from './SchemaDefinition';
 /**
  * The SchemaReadResponse model module.
  * @module model/SchemaReadResponse
- * @version 0.11.0
+ * @version 1.6.9
  */
 class SchemaReadResponse {
     /**

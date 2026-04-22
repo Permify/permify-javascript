@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The Tenant model module.
  * @module model/Tenant
- * @version 0.11.0
+ * @version 1.6.9
  */
 class Tenant {
     /**

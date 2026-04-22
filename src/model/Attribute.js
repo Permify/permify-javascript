@@ -18,7 +18,7 @@ import Entity from './Entity';
 /**
  * The Attribute model module.
  * @module model/Attribute
- * @version 0.11.0
+ * @version 1.6.9
  */
 class Attribute {
     /**

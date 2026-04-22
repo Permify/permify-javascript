@@ -17,7 +17,7 @@ import Attribute from './Attribute';
 /**
  * The AttributeReadResponse model module.
  * @module model/AttributeReadResponse
- * @version 0.11.0
+ * @version 1.6.9
  */
 class AttributeReadResponse {
     /**

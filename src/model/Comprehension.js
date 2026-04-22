@@ -17,7 +17,7 @@ import Expr from './Expr';
 /**
  * The Comprehension model module.
  * @module model/Comprehension
- * @version 0.11.0
+ * @version 1.6.9
  */
 class Comprehension {
     /**

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The SchemaReadRequestMetadata model module.
  * @module model/SchemaReadRequestMetadata
- * @version 0.11.0
+ * @version 1.6.9
  */
 class SchemaReadRequestMetadata {
     /**

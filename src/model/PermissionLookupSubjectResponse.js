@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The PermissionLookupSubjectResponse model module.
  * @module model/PermissionLookupSubjectResponse
- * @version 0.11.0
+ * @version 1.6.9
  */
 class PermissionLookupSubjectResponse {
     /**

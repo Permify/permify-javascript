@@ -18,7 +18,7 @@ import SchemaPartialWriteRequestMetadata from './SchemaPartialWriteRequestMetada
 /**
  * The PartialWriteBody model module.
  * @module model/PartialWriteBody
- * @version 0.11.0
+ * @version 1.6.9
  */
 class PartialWriteBody {
     /**

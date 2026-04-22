@@ -18,7 +18,7 @@ import Tuple from './Tuple';
 /**
  * The WriteRelationshipsBody model module.
  * @module model/WriteRelationshipsBody
- * @version 0.11.0
+ * @version 1.6.9
  */
 class WriteRelationshipsBody {
     /**

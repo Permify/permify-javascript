@@ -18,7 +18,7 @@ import SubjectFilter from './SubjectFilter';
 /**
  * The TupleFilter model module.
  * @module model/TupleFilter
- * @version 0.11.0
+ * @version 1.6.9
  */
 class TupleFilter {
     /**

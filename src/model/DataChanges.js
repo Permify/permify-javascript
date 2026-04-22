@@ -17,7 +17,7 @@ import DataChange from './DataChange';
 /**
  * The DataChanges model module.
  * @module model/DataChanges
- * @version 0.11.0
+ * @version 1.6.9
  */
 class DataChanges {
     /**

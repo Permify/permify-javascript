@@ -20,7 +20,7 @@ import RelationDefinition from './RelationDefinition';
 /**
  * The EntityDefinition model module.
  * @module model/EntityDefinition
- * @version 0.11.0
+ * @version 1.6.9
  */
 class EntityDefinition {
     /**

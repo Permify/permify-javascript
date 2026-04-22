@@ -21,7 +21,7 @@ import Subject from './Subject';
 /**
  * The CheckBody model module.
  * @module model/CheckBody
- * @version 0.11.0
+ * @version 1.6.9
  */
 class CheckBody {
     /**

@@ -17,7 +17,7 @@ import DataBundle from './DataBundle';
 /**
  * The BundleWriteBody model module.
  * @module model/BundleWriteBody
- * @version 0.11.0
+ * @version 1.6.9
  */
 class BundleWriteBody {
     /**

@@ -18,7 +18,7 @@ import TupleSet from './TupleSet';
 /**
  * The TupleToUserSet model module.
  * @module model/TupleToUserSet
- * @version 0.11.0
+ * @version 1.6.9
  */
 class TupleToUserSet {
     /**

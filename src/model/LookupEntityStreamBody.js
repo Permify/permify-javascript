@@ -20,7 +20,7 @@ import Subject from './Subject';
 /**
  * The LookupEntityStreamBody model module.
  * @module model/LookupEntityStreamBody
- * @version 0.11.0
+ * @version 1.6.9
  */
 class LookupEntityStreamBody {
     /**

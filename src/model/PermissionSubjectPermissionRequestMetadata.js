@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The PermissionSubjectPermissionRequestMetadata model module.
  * @module model/PermissionSubjectPermissionRequestMetadata
- * @version 0.11.0
+ * @version 1.6.9
  */
 class PermissionSubjectPermissionRequestMetadata {
     /**

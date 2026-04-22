@@ -17,7 +17,7 @@ import DataChanges from './DataChanges';
 /**
  * The WatchResponse model module.
  * @module model/WatchResponse
- * @version 0.11.0
+ * @version 1.6.9
  */
 class WatchResponse {
     /**

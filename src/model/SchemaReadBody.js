@@ -17,7 +17,7 @@ import SchemaReadRequestMetadata from './SchemaReadRequestMetadata';
 /**
  * The SchemaReadBody model module.
  * @module model/SchemaReadBody
- * @version 0.11.0
+ * @version 1.6.9
  */
 class SchemaReadBody {
     /**

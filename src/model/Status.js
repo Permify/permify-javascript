@@ -17,7 +17,7 @@ import Any from './Any';
 /**
  * The Status model module.
  * @module model/Status
- * @version 0.11.0
+ * @version 1.6.9
  */
 class Status {
     /**
