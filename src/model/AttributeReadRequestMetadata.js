@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The AttributeReadRequestMetadata model module.
  * @module model/AttributeReadRequestMetadata
- * @version 0.11.0
+ * @version 1.6.9
  */
 class AttributeReadRequestMetadata {
     /**

@@ -18,7 +18,7 @@ import Status from './Status';
 /**
  * The StreamResultOfPermissionLookupEntityStreamResponse model module.
  * @module model/StreamResultOfPermissionLookupEntityStreamResponse
- * @version 0.11.0
+ * @version 1.6.9
  */
 class StreamResultOfPermissionLookupEntityStreamResponse {
     /**

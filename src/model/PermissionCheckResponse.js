@@ -18,7 +18,7 @@ import PermissionCheckResponseMetadata from './PermissionCheckResponseMetadata';
 /**
  * The PermissionCheckResponse model module.
  * @module model/PermissionCheckResponse
- * @version 0.11.0
+ * @version 1.6.9
  */
 class PermissionCheckResponse {
     /**

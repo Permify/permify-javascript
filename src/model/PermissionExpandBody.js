@@ -20,7 +20,7 @@ import PermissionExpandRequestMetadata from './PermissionExpandRequestMetadata';
 /**
  * The PermissionExpandBody model module.
  * @module model/PermissionExpandBody
- * @version 0.11.0
+ * @version 1.6.9
  */
 class PermissionExpandBody {
     /**

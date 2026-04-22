@@ -18,7 +18,7 @@ import Rewrite from './Rewrite';
 /**
  * The Child model module.
  * @module model/Child
- * @version 0.11.0
+ * @version 1.6.9
  */
 class Child {
     /**

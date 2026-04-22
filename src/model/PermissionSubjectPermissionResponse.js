@@ -17,7 +17,7 @@ import CheckResult from './CheckResult';
 /**
  * The PermissionSubjectPermissionResponse model module.
  * @module model/PermissionSubjectPermissionResponse
- * @version 0.11.0
+ * @version 1.6.9
  */
 class PermissionSubjectPermissionResponse {
     /**

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The WatchBody model module.
  * @module model/WatchBody
- * @version 0.11.0
+ * @version 1.6.9
  */
 class WatchBody {
     /**

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The SchemaPartialWriteResponse model module.
  * @module model/SchemaPartialWriteResponse
- * @version 0.11.0
+ * @version 1.6.9
  */
 class SchemaPartialWriteResponse {
     /**

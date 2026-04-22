@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ComputedUserSet model module.
  * @module model/ComputedUserSet
- * @version 0.11.0
+ * @version 1.6.9
  */
 class ComputedUserSet {
     /**

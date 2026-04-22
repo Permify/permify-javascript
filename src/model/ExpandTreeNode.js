@@ -18,7 +18,7 @@ import V1Expand from './V1Expand';
 /**
  * The ExpandTreeNode model module.
  * @module model/ExpandTreeNode
- * @version 0.11.0
+ * @version 1.6.9
  */
 class ExpandTreeNode {
     /**

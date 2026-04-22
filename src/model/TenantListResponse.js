@@ -17,7 +17,7 @@ import Tenant from './Tenant';
 /**
  * The TenantListResponse model module.
  * @module model/TenantListResponse
- * @version 0.11.0
+ * @version 1.6.9
  */
 class TenantListResponse {
     /**

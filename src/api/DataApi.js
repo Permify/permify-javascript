@@ -32,7 +32,7 @@ import WriteRelationshipsBody from '../model/WriteRelationshipsBody';
 /**
 * Data service.
 * @module api/DataApi
-* @version 0.11.0
+* @version 1.6.9
 */
 export default class DataApi {
 

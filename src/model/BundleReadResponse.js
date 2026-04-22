@@ -17,7 +17,7 @@ import DataBundle from './DataBundle';
 /**
  * The BundleReadResponse model module.
  * @module model/BundleReadResponse
- * @version 0.11.0
+ * @version 1.6.9
  */
 class BundleReadResponse {
     /**

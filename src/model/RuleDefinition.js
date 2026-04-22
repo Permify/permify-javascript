@@ -18,7 +18,7 @@ import CheckedExpr from './CheckedExpr';
 /**
  * The RuleDefinition model module.
  * @module model/RuleDefinition
- * @version 0.11.0
+ * @version 1.6.9
  */
 class RuleDefinition {
     /**

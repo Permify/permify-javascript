@@ -23,7 +23,7 @@ import Select from './Select';
 /**
  * The Expr model module.
  * @module model/Expr
- * @version 0.11.0
+ * @version 1.6.9
  */
 class Expr {
     /**

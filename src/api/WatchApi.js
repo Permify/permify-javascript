@@ -20,7 +20,7 @@ import WatchBody from '../model/WatchBody';
 /**
 * Watch service.
 * @module api/WatchApi
-* @version 0.11.0
+* @version 1.6.9
 */
 export default class WatchApi {
 

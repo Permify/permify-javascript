@@ -17,7 +17,7 @@ import V1Operation from './V1Operation';
 /**
  * The DataBundle model module.
  * @module model/DataBundle
- * @version 0.11.0
+ * @version 1.6.9
  */
 class DataBundle {
     /**

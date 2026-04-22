@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The SchemaWriteBody model module.
  * @module model/SchemaWriteBody
- * @version 0.11.0
+ * @version 1.6.9
  */
 class SchemaWriteBody {
     /**

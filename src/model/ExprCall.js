@@ -17,7 +17,7 @@ import Expr from './Expr';
 /**
  * The ExprCall model module.
  * @module model/ExprCall
- * @version 0.11.0
+ * @version 1.6.9
  */
 class ExprCall {
     /**

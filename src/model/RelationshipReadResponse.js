@@ -17,7 +17,7 @@ import Tuple from './Tuple';
 /**
  * The RelationshipReadResponse model module.
  * @module model/RelationshipReadResponse
- * @version 0.11.0
+ * @version 1.6.9
  */
 class RelationshipReadResponse {
     /**

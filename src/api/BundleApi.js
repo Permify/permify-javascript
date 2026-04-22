@@ -24,7 +24,7 @@ import Status from '../model/Status';
 /**
 * Bundle service.
 * @module api/BundleApi
-* @version 0.11.0
+* @version 1.6.9
 */
 export default class BundleApi {
 

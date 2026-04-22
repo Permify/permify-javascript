@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The DataDeleteResponse model module.
  * @module model/DataDeleteResponse
- * @version 0.11.0
+ * @version 1.6.9
  */
 class DataDeleteResponse {
     /**

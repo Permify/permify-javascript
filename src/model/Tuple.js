@@ -18,7 +18,7 @@ import Subject from './Subject';
 /**
  * The Tuple model module.
  * @module model/Tuple
- * @version 0.11.0
+ * @version 1.6.9
  */
 class Tuple {
     /**

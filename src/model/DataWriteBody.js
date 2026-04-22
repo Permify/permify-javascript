@@ -19,7 +19,7 @@ import Tuple from './Tuple';
 /**
  * The DataWriteBody model module.
  * @module model/DataWriteBody
- * @version 0.11.0
+ * @version 1.6.9
  */
 class DataWriteBody {
     /**

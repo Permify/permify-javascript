@@ -17,7 +17,7 @@ import Child from './Child';
 /**
  * The PermissionDefinition model module.
  * @module model/PermissionDefinition
- * @version 0.11.0
+ * @version 1.6.9
  */
 class PermissionDefinition {
     /**

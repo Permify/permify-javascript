@@ -19,7 +19,7 @@ import Values from './Values';
 /**
  * The ExpandLeaf model module.
  * @module model/ExpandLeaf
- * @version 0.11.0
+ * @version 1.6.9
  */
 class ExpandLeaf {
     /**

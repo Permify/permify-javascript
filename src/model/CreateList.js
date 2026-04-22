@@ -17,7 +17,7 @@ import Expr from './Expr';
 /**
  * The CreateList model module.
  * @module model/CreateList
- * @version 0.11.0
+ * @version 1.6.9
  */
 class CreateList {
     /**

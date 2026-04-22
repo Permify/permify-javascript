@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The Ident model module.
  * @module model/Ident
- * @version 0.11.0
+ * @version 1.6.9
  */
 class Ident {
     /**

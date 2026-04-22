@@ -18,7 +18,7 @@ import WatchResponse from './WatchResponse';
 /**
  * The StreamResultOfWatchResponse model module.
  * @module model/StreamResultOfWatchResponse
- * @version 0.11.0
+ * @version 1.6.9
  */
 class StreamResultOfWatchResponse {
     /**

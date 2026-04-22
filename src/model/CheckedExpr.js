@@ -20,7 +20,7 @@ import V1alpha1Type from './V1alpha1Type';
 /**
  * The CheckedExpr model module.
  * @module model/CheckedExpr
- * @version 0.11.0
+ * @version 1.6.9
  */
 class CheckedExpr {
     /**

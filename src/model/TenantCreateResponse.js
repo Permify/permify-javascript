@@ -17,7 +17,7 @@ import Tenant from './Tenant';
 /**
  * The TenantCreateResponse model module.
  * @module model/TenantCreateResponse
- * @version 0.11.0
+ * @version 1.6.9
  */
 class TenantCreateResponse {
     /**

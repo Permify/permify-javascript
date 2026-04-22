@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The SchemaListBody model module.
  * @module model/SchemaListBody
- * @version 0.11.0
+ * @version 1.6.9
  */
 class SchemaListBody {
     /**

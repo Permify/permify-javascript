@@ -17,7 +17,7 @@ import TupleFilter from './TupleFilter';
 /**
  * The DeleteRelationshipsBody model module.
  * @module model/DeleteRelationshipsBody
- * @version 0.11.0
+ * @version 1.6.9
  */
 class DeleteRelationshipsBody {
     /**

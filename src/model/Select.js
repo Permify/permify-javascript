@@ -17,7 +17,7 @@ import Expr from './Expr';
 /**
  * The Select model module.
  * @module model/Select
- * @version 0.11.0
+ * @version 1.6.9
  */
 class Select {
     /**

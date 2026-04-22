@@ -18,7 +18,7 @@ import TupleFilter from './TupleFilter';
 /**
  * The DataDeleteBody model module.
  * @module model/DataDeleteBody
- * @version 0.11.0
+ * @version 1.6.9
  */
 class DataDeleteBody {
     /**

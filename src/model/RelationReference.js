@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The RelationReference model module.
  * @module model/RelationReference
- * @version 0.11.0
+ * @version 1.6.9
  */
 class RelationReference {
     /**

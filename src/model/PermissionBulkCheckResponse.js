@@ -17,7 +17,7 @@ import PermissionCheckResponse from './PermissionCheckResponse';
 /**
  * The PermissionBulkCheckResponse model module.
  * @module model/PermissionBulkCheckResponse
- * @version 0.11.0
+ * @version 1.6.9
  */
 class PermissionBulkCheckResponse {
     /**

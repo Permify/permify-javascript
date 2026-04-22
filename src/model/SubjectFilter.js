@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The SubjectFilter model module.
  * @module model/SubjectFilter
- * @version 0.11.0
+ * @version 1.6.9
  */
 class SubjectFilter {
     /**

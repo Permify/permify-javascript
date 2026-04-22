@@ -1,16 +1,13 @@
 {
   "name": "permify-javascript",
-  "version": "0.11.0",
+  "version": "1.6.9",
   "description": "Permify is an open source authorization service for creating fine-grained and scalable authorization systems.",
   "license": "Apache-2.0",
   "main": "dist/index.js",
   "scripts": {
     "build": "babel src -d dist",
     "prepare": "npm run build",
-    "test": "mocha --require @babel/register --recursive",
-    "test:live": "mocha --require @babel/register integration/**/*.spec.js",
-    "run-live-tests": "./scripts/run-live-tests.sh",
-    "run-instance": "./scripts/run-live-tests.sh"
+    "test": "mocha --require @babel/register --recursive"
   },
   "browser": {
     "fs": false

@@ -17,7 +17,7 @@ import V1alpha1Type from './V1alpha1Type';
 /**
  * The FunctionType model module.
  * @module model/FunctionType
- * @version 0.11.0
+ * @version 1.6.9
  */
 class FunctionType {
     /**

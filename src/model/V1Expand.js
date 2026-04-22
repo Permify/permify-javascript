@@ -20,7 +20,7 @@ import ExpandTreeNode from './ExpandTreeNode';
 /**
  * The V1Expand model module.
  * @module model/V1Expand
- * @version 0.11.0
+ * @version 1.6.9
  */
 class V1Expand {
     /**

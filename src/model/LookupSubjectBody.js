@@ -21,7 +21,7 @@ import RelationReference from './RelationReference';
 /**
  * The LookupSubjectBody model module.
  * @module model/LookupSubjectBody
- * @version 0.11.0
+ * @version 1.6.9
  */
 class LookupSubjectBody {
     /**

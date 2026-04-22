@@ -19,7 +19,7 @@ import SchemaDefinitionReference from './SchemaDefinitionReference';
 /**
  * The SchemaDefinition model module.
  * @module model/SchemaDefinition
- * @version 0.11.0
+ * @version 1.6.9
  */
 class SchemaDefinition {
     /**
