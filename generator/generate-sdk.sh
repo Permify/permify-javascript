@@ -6,10 +6,11 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="${SCRIPT_DIR}/.."
 OPENAPI_FILE="${SCRIPT_DIR}/openapi.json"
 GENERATOR_VERSION="7.13.0"
-PACKAGE_VERSION="$(sed -n 's/^[[:space:]]*"version":[[:space:]]*"\([^"]*\)".*/\1/p' "${PROJECT_ROOT}/package.json" | head -n 1)"
+OPENAPI_VERSION="$(sed -n 's/.*"version":[[:space:]]*"\([^"]*\)".*/\1/p' "${OPENAPI_FILE}" | head -n 1)"
+PACKAGE_VERSION="${OPENAPI_VERSION#v}"
 
-if [[ -z "${PACKAGE_VERSION}" ]]; then
-  echo "Could not determine package version from ${PROJECT_ROOT}/package.json" >&2
+if [[ -z "${OPENAPI_VERSION}" || -z "${PACKAGE_VERSION}" ]]; then
+  echo "Could not determine package version from ${OPENAPI_FILE}" >&2
   exit 1
 fi
 

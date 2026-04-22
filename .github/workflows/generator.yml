@@ -37,11 +37,22 @@ jobs:
           distribution: temurin
           java-version: 17
 
+      - name: Setup Node.js
+        uses: actions/setup-node@2028fbc5c25fe9cf00d9f06a71cc4710d4507903 # v6.0.0
+        with:
+          node-version: 20
+
       # Generate the SDK
       - name: Generate JavaScript SDK
         run: |
           chmod +x generator/generate-sdk.sh
           generator/generate-sdk.sh
+
+      - name: Install dependencies
+        run: npm install --no-package-lock
+
+      - name: Run smoke tests
+        run: npm test
 
       # Commit changes and open PR if there are changes
       - name: Commit changes
@@ -68,6 +79,17 @@ jobs:
           if [ -n "${PR_NUMBER}" ]; then
             gh pr edit "${PR_NUMBER}" --title "${PR_TITLE}" --body "${PR_BODY}"
           else
-            gh pr create --base main --head "${BRANCH_NAME}" --title "${PR_TITLE}" --body "${PR_BODY}" --label dependencies --label automated
+            CREATE_ARGS=(--base main --head "${BRANCH_NAME}" --title "${PR_TITLE}" --body "${PR_BODY}")
+            LABELS="$(gh label list --json name --jq '.[].name' || true)"
+
+            if printf '%s\n' "${LABELS}" | grep -qx 'dependencies'; then
+              CREATE_ARGS+=(--label dependencies)
+            fi
+
+            if printf '%s\n' "${LABELS}" | grep -qx 'automated'; then
+              CREATE_ARGS+=(--label automated)
+            fi
+
+            gh pr create "${CREATE_ARGS[@]}"
           fi
         shell: bash
